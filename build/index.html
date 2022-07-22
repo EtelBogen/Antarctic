@@ -18,15 +18,14 @@
   </head>
   <body class="page__body">
     <div class="wrapper">
-      <header class="page-header page-header--nojs">
+      <header class="page-header">
         <div class="container">
           <div class="page-header__logo logo logo--header">
-            <a href="#">
-              <picture>
-                <source media="(max-width: 767px)" srcset="img/svg/logo-mobile.svg">
-                <source media="(max-width: 1159px)" srcset="img/svg/logo-tablet.svg">
-                <img src="/img/svg/logo-desktop.svg" width="70" height="38" alt="Логотип сайта круизов в Антарктику.">
-              </picture>
+            <a href="index.html">
+              <span class="visually-hidden">На основную страницу сайта круизов в Антарктику.</span>
+              <svg width="70" height="38">
+                <use href="img/sprite_auto.svg#logo"></use>
+              </svg>
             </a>
           </div>
 
@@ -68,6 +67,7 @@
               </svg>
             </div>
           </button>
+
           <section class="page-header__title">
             <h1>Круизы в&nbsp;Антарктику</h1>
             <p>Волшебный мир айсбергов&nbsp;и&nbsp;пингвинов</p>
@@ -76,7 +76,7 @@
       </header>
 
       <main>
-        <section class="promo section" id="promo">
+        <section class="section promo" id="promo">
           <div class="container">
             <div class="promo__wrapper">
               <h2>
@@ -100,13 +100,13 @@
           </div>
         </section>
 
-        <section class="advantages section" id="advantages">
+        <section class="section advantages" id="advantages">
           <div class="container">
             <h2>
               Преимущества
             </h2>
             <ul class="advantages__list list-reset">
-              <li class="advantages__card advatages-card section_title">
+              <li class="advantages__card advantages-card">
                 <svg width="27" height="32">
                   <use href="img/sprite_auto.svg#advantages-icon-ship"></use>
                 </svg>
@@ -117,7 +117,7 @@
                   Круизный лайнер, рассчитанный всего лишь на 300 гостей, поможет избежать шума и&nbsp;очередей и&nbsp;даст возможность насладиться видами и&nbsp;природой.
                 </p>
               </li>
-              <li class="advantages__card advatages-card section_title">
+              <li class="advantages__card advantages-card">
                 <svg width="38" height="21">
                   <use href="img/sprite_auto.svg#advantages-icon-allinclusive"></use>
                 </svg>
@@ -128,7 +128,7 @@
                   Все наши круизы работают<br> по&nbsp;системе “Все Включено”. Великолепные блюда и&nbsp;безлимитный бар доступны для&nbsp;ваc 24&nbsp;часа.
                 </p>
               </li>
-              <li class="advantages__card advatages-card section_title">
+              <li class="advantages__card advantages-card">
                 <svg width="45" height="15">
                   <use href="img/sprite_auto.svg#advantages-icon-boat"></use>
                 </svg>
@@ -143,28 +143,31 @@
           </div>
         </section>
 
-        <section class="catalog section" id="catalog">
+        <section class="section catalog" id="catalog">
           <div class="container">
             <h2>
               Ближайшие круизы
             </h2>
-            <ul class="catalog__list">
+            <ul class="catalog__list list-reset">
               <li class="catalog__card catalog-card">
-                <div class="catalog-card__picture">
-                  <picture>
-                    <!--
-                    <source type="image/webp" media="(max-width: 767px)" srcset="img/catalog/astoria-mobile@1x.webp 1x, img/catalog/astoria-mobile@2x.webp 2x">
-                    <source type="image/webp" media="(max-width: 1159px)" srcset="img/catalog/astoria-tablet@1x.webp 1x, img/catalog/astoria-tablet@2x.webp 2x">
-                    <source type="image/webp" srcset="img/catalog/astoria-desktop@1x.webp 1x, img/catalog/astoria-desktop@2x.webp 2x">
-                    -->
-                    <!-- 1x: 260px ; 2x: 520px -->
-                    <img src="img/catalog/astoria-desktop@1x.jpg" srcset="img/catalog/astoria-desktop@2x.jpg 2x" width="260" height="386" alt="Антарктический пейзаж из круиза «Астория».">
-                  </picture>
+                <div class="catalog-card__side catalog-card__side--front">
+                  <div class="catalog-card__picture">
+                    <picture>
+                      <!--
+                      <source type="image/webp" media="(max-width: 767px)" srcset="img/catalog/astoria-mobile@1x.webp 1x, img/catalog/astoria-mobile@2x.webp 2x">
+                      <source type="image/webp" media="(max-width: 1159px)" srcset="img/catalog/astoria-tablet@1x.webp 1x, img/catalog/astoria-tablet@2x.webp 2x">
+                      <source type="image/webp" srcset="img/catalog/astoria-desktop@1x.webp 1x, img/catalog/astoria-desktop@2x.webp 2x">
+                      -->
+                      <!-- 1x: 260px ; 2x: 520px -->
+                      <img src="img/catalog/astoria-desktop@1x.jpg" srcset="img/catalog/astoria-desktop@2x.jpg 2x" width="260" height="386" alt="Антарктический пейзаж из круиза «Астория».">
+                    </picture>
+                  </div>
+                  <h3>
+                    Круиз “Астория”
+                  </h3>
                 </div>
-                <h3>
-                  Круиз “Астория”
-                </h3>
-                <div class="catalog-card__wrapper">
+                <div class="catalog-card__side catalog-card__side--back">
+                  <span>Круиз “Астория”</span>
                   <dl class="catalog-card__details">
                     <dt>Маршрут</dt>
                     <dd>Аргентина - Фолклендские острова - Антарктида</dd>
@@ -180,22 +183,26 @@
                   </a>
                 </div>
               </li>
+
               <li class="catalog__card catalog-card">
-                <div class="catalog-card__picture">
-                  <picture>
-                    <!--
-                    <source type="image/webp" media="(max-width: 767px)" srcset="img/catalog/aline-mobile@1x.webp 1x, img/catalog/aline-mobile@2x.webp 2x">
-                    <source type="image/webp" media="(max-width: 1159px)" srcset="img/catalog/aline-tablet@2x.webp 1x, img/catalog/aline-tablet@2x.webp 2x">
-                    <source type="image/webp" srcset="img/catalog/aline-desktop@1x.webp 1x, img/catalog/aline-desktop@2x.webp 2x">
-                    -->
-                    <!-- 1x: 260px ; 2x: 520px -->
-                    <img src="img/catalog/aline-desktop@1x.jpg" srcset="img/catalog/aline-desktop@2x.jpg 2x" width="260" height="386" alt="Антарктический пейзаж из круиза «Элайн».">
-                  </picture>
+                <div class="catalog-card__side catalog-card__side--front">
+                  <div class="catalog-card__picture">
+                    <picture>
+                      <!--
+                      <source type="image/webp" media="(max-width: 767px)" srcset="img/catalog/aline-mobile@1x.webp 1x, img/catalog/aline-mobile@2x.webp 2x">
+                      <source type="image/webp" media="(max-width: 1159px)" srcset="img/catalog/aline-tablet@2x.webp 1x, img/catalog/aline-tablet@2x.webp 2x">
+                      <source type="image/webp" srcset="img/catalog/aline-desktop@1x.webp 1x, img/catalog/aline-desktop@2x.webp 2x">
+                      -->
+                      <!-- 1x: 260px ; 2x: 520px -->
+                      <img src="img/catalog/aline-desktop@1x.jpg" srcset="img/catalog/aline-desktop@2x.jpg 2x" width="260" height="386" alt="Антарктический пейзаж из круиза «Элайн».">
+                    </picture>
+                  </div>
+                  <h3>
+                    Круиз “Элайн”
+                  </h3>
                 </div>
-                <h3>
-                  Круиз “Элайн”
-                </h3>
-                <div class="catalog-card__wrapper">
+                <div class="catalog-card__side catalog-card__side--back">
+                  <span>Круиз “Элайн”</span>
                   <dl class="catalog-card__details">
                     <dt>Маршрут</dt>
                     <dd>Аргентина - Фолклендские острова - Антарктида - Чили</dd>
@@ -211,22 +218,26 @@
                   </a>
                 </div>
               </li>
+
               <li class="catalog__card catalog-card">
-                <div class="catalog-card__picture">
-                  <picture>
-                    <!--
-                    <source type="image/webp" media="(max-width: 767px)" srcset="img/catalog/atlantis-mobile@1x.webp 1x, img/catalog/atlantis-mobile@2x.webp 2x">
-                    <source type="image/webp" media="(max-width: 1159px)" srcset="img/catalog/atlantis-tablet@1x.webp 1x, img/catalog/atlantis-tablet@2x.webp 2x">
-                    <source type="image/webp" srcset="img/catalog/atlantis-desktop@1x.webp 1x, img/catalog/atlantis-desktop@2x.webp 2x">
-                    -->
-                    <!-- 1x: 260px ; 2x: 520px -->
-                    <img src="img/catalog/atlantis-desktop@1x.jpg" srcset="img/catalog/atlantis-desktop@2x.jpg 2x" width="260" height="386" alt="Антарктический пейзаж из круиза «Атлантис».">
-                  </picture>
+                <div class="catalog-card__side catalog-card__side--front">
+                  <div class="catalog-card__picture">
+                    <picture>
+                      <!--
+                      <source type="image/webp" media="(max-width: 767px)" srcset="img/catalog/atlantis-mobile@1x.webp 1x, img/catalog/atlantis-mobile@2x.webp 2x">
+                      <source type="image/webp" media="(max-width: 1159px)" srcset="img/catalog/atlantis-tablet@1x.webp 1x, img/catalog/atlantis-tablet@2x.webp 2x">
+                      <source type="image/webp" srcset="img/catalog/atlantis-desktop@1x.webp 1x, img/catalog/atlantis-desktop@2x.webp 2x">
+                      -->
+                      <!-- 1x: 260px ; 2x: 520px -->
+                      <img src="img/catalog/atlantis-desktop@1x.jpg" srcset="img/catalog/atlantis-desktop@2x.jpg 2x" width="260" height="386" alt="Антарктический пейзаж из круиза «Атлантис».">
+                    </picture>
+                  </div>
+                  <h3>
+                    Круиз “Атлантис”
+                  </h3>
                 </div>
-                <h3>
-                  Круиз “Атлантис”
-                </h3>
-                <div class="catalog-card__wrapper">
+                <div class="catalog-card__side catalog-card__side--back">
+                  <span>Круиз “Атлантис”</span>
                   <dl class="catalog-card__details">
                     <dt>Маршрут</dt>
                     <dd>Аргентина - Южная Георгия и Южные Сандвичевы Острова - Антарктида</dd>
@@ -242,22 +253,26 @@
                   </a>
                 </div>
               </li>
+
               <li class="catalog__card catalog-card">
-                <div class="catalog-card__picture">
-                  <picture>
-                    <!--
-                    <source type="image/webp" media="(max-width: 767px)" srcset="img/catalog/odysseus-mobile@1x.webp 1x, img/catalog/odysseus-mobile@2x.webp 2x">
-                    <source type="image/webp" media="(max-width: 1159px)" srcset="img/catalog/odysseus-tablet@1x.webp 1x, img/catalog/odysseus-tablet@2x.webp 2x">
-                    <source type="image/webp" srcset="img/catalog/odysseus-desktop@1x.webp 1x, img/catalog/odysseus-desktop@2x.webp 2x">
-                    -->
-                    <!-- 1x: 260px ; 2x: 520px -->
-                    <img src="img/catalog/odysseus-desktop@1x.jpg" srcset="img/catalog/odysseus-desktop@2x.jpg 2x" width="260" height="386" alt="Антарктический пейзаж из круиза «Одиссей».">
-                  </picture>
+                <div class="catalog-card__side catalog-card__side--front">
+                  <div class="catalog-card__picture">
+                    <picture>
+                      <!--
+                      <source type="image/webp" media="(max-width: 767px)" srcset="img/catalog/odysseus-mobile@1x.webp 1x, img/catalog/odysseus-mobile@2x.webp 2x">
+                      <source type="image/webp" media="(max-width: 1159px)" srcset="img/catalog/odysseus-tablet@1x.webp 1x, img/catalog/odysseus-tablet@2x.webp 2x">
+                      <source type="image/webp" srcset="img/catalog/odysseus-desktop@1x.webp 1x, img/catalog/odysseus-desktop@2x.webp 2x">
+                      -->
+                      <!-- 1x: 260px ; 2x: 520px -->
+                      <img src="img/catalog/odysseus-desktop@1x.jpg" srcset="img/catalog/odysseus-desktop@2x.jpg 2x" width="260" height="386" alt="Антарктический пейзаж из круиза «Одиссей».">
+                    </picture>
+                  </div>
+                  <h3>
+                    Круиз “Одиссей”
+                  </h3>
                 </div>
-                <h3>
-                  Круиз “Одиссей”
-                </h3>
-                <div class="catalog-card__wrapper">
+                <div class="catalog-card__side catalog-card__side--back">
+                  <span>Круиз “Одиссей”</span>
                   <dl class="catalog-card__details">
                     <dt>Маршрут</dt>
                     <dd>Чили - Антарктида</dd>
@@ -273,22 +288,26 @@
                   </a>
                 </div>
               </li>
+
               <li class="catalog__card catalog-card">
-                <div class="catalog-card__picture">
-                  <picture>
-                    <!--
-                    <source type="image/webp" media="(max-width: 767px)" srcset="img/catalog/olimpia-mobile@1x.webp 1x, img/catalog/olimpia-mobile@2x.webp 2x">
-                    <source type="image/webp" media="(max-width: 1159px)" srcset="img/catalog/olimpia-tablet@1x.webp 1x, img/catalog/olimpia-tablet@2x.webp 2x">
-                    <source type="image/webp" srcset="img/catalog/olimpia-desktop@1x.webp 1x, img/catalog/olimpia-desktop@2x.webp 2x">
-                    -->
-                    <!-- 1x: 260px ; 2x: 520px -->
-                    <img src="img/catalog/olimpia-desktop@1x.jpg" srcset="img/catalog/olimpia-desktop@2x.jpg 2x" width="260" height="386" alt="Антарктический пейзаж из круиза «Олимпия».">
-                  </picture>
+                <div class="catalog-card__side catalog-card__side--front">
+                  <div class="catalog-card__picture">
+                    <picture>
+                      <!--
+                      <source type="image/webp" media="(max-width: 767px)" srcset="img/catalog/olimpia-mobile@1x.webp 1x, img/catalog/olimpia-mobile@2x.webp 2x">
+                      <source type="image/webp" media="(max-width: 1159px)" srcset="img/catalog/olimpia-tablet@1x.webp 1x, img/catalog/olimpia-tablet@2x.webp 2x">
+                      <source type="image/webp" srcset="img/catalog/olimpia-desktop@1x.webp 1x, img/catalog/olimpia-desktop@2x.webp 2x">
+                      -->
+                      <!-- 1x: 260px ; 2x: 520px -->
+                      <img src="img/catalog/olimpia-desktop@1x.jpg" srcset="img/catalog/olimpia-desktop@2x.jpg 2x" width="260" height="386" alt="Антарктический пейзаж из круиза «Олимпия».">
+                    </picture>
+                  </div>
+                  <h3>
+                    Круиз “Олимпия”
+                  </h3>
                 </div>
-                <h3>
-                  Круиз “Олимпия”
-                </h3>
-                <div class="catalog-card__wrapper">
+                <div class="catalog-card__side catalog-card__side--back">
+                  <span>Круиз “Олимпия”</span>
                   <dl class="catalog-card__details">
                     <dt>Маршрут</dt>
                     <dd>Аргентина - Фолклендские острова - Южная Георгия - Антарктида</dd>
@@ -304,22 +323,26 @@
                   </a>
                 </div>
               </li>
+
               <li class="catalog__card catalog-card">
-                <div class="catalog-card__picture">
-                  <picture>
-                    <!--
-                    <source type="image/webp" media="(max-width: 767px)" srcset="img/catalog/aurora-mobile@1x.webp 1x, img/catalog/aurora-mobile@2x.webp 2x">
-                    <source type="image/webp" media="(max-width: 1159px)" srcset="img/catalog/aurora-tablet@1x.webp 1x, img/catalog/aurora-tablet@2x.webp 2x">
-                    <source type="image/webp" srcset="img/catalog/aurora-desktop@1x.webp 1x, img/catalog/aurora-desktop@2x.webp 2x">
-                    -->
-                    <!-- 1x: 260px ; 2x: 520px -->
-                    <img src="img/catalog/aurora-desktop@1x.jpg" srcset="img/catalog/aurora-desktop@2x.jpg 2x" width="260" height="386" alt="Антарктический пейзаж из круиза «Аврора».">
-                  </picture>
+                <div class="catalog-card__side catalog-card__side--front">
+                  <div class="catalog-card__picture">
+                    <picture>
+                      <!--
+                      <source type="image/webp" media="(max-width: 767px)" srcset="img/catalog/aurora-mobile@1x.webp 1x, img/catalog/aurora-mobile@2x.webp 2x">
+                      <source type="image/webp" media="(max-width: 1159px)" srcset="img/catalog/aurora-tablet@1x.webp 1x, img/catalog/aurora-tablet@2x.webp 2x">
+                      <source type="image/webp" srcset="img/catalog/aurora-desktop@1x.webp 1x, img/catalog/aurora-desktop@2x.webp 2x">
+                      -->
+                      <!-- 1x: 260px ; 2x: 520px -->
+                      <img src="img/catalog/aurora-desktop@1x.jpg" srcset="img/catalog/aurora-desktop@2x.jpg 2x" width="260" height="386" alt="Антарктический пейзаж из круиза «Аврора».">
+                    </picture>
+                  </div>
+                  <h3>
+                    Круиз “Аврора”
+                  </h3>
                 </div>
-                <h3>
-                  Круиз “Аврора”
-                </h3>
-                <div class="catalog-card__wrapper">
+                <div class="catalog-card__side catalog-card__side--back">
+                  <span>Круиз “Аврора”</span>
                   <dl class="catalog-card__details">
                     <dt>Маршрут</dt>
                     <dd>Аргентина - Антарктида - Чили</dd>
@@ -335,22 +358,26 @@
                   </a>
                 </div>
               </li>
+
               <li class="catalog__card catalog-card">
-                <div class="catalog-card__picture">
-                  <picture>
-                    <!--
-                    <source type="image/webp" media="(max-width: 767px)" srcset="img/catalog/leonor-mobile@1x.webp 1x, img/catalog/leonor-mobile@2x.webp 2x">
-                    <source type="image/webp" media="(max-width: 1159px)" srcset="img/catalog/leonor-tablet@1x.webp 1x, img/catalog/leonor-tablet@2x.webp 2x">
-                    <source type="image/webp" srcset="img/catalog/leonor-desktop@1x.webp 1x, img/catalog/leonor-desktop@2x.webp 2x">
-                    -->
-                    <!-- 1x: 260px ; 2x: 520px -->
-                    <img src="img/catalog/leonor-desktop@1x.jpg" srcset="img/catalog/leonor-desktop@2x.jpg 2x" width="260" height="386" alt="Антарктический пейзаж из круиза «Леонор».">
-                  </picture>
+                <div class="catalog-card__side catalog-card__side--front">
+                  <div class="catalog-card__picture">
+                    <picture>
+                      <!--
+                      <source type="image/webp" media="(max-width: 767px)" srcset="img/catalog/leonor-mobile@1x.webp 1x, img/catalog/leonor-mobile@2x.webp 2x">
+                      <source type="image/webp" media="(max-width: 1159px)" srcset="img/catalog/leonor-tablet@1x.webp 1x, img/catalog/leonor-tablet@2x.webp 2x">
+                      <source type="image/webp" srcset="img/catalog/leonor-desktop@1x.webp 1x, img/catalog/leonor-desktop@2x.webp 2x">
+                      -->
+                      <!-- 1x: 260px ; 2x: 520px -->
+                      <img src="img/catalog/leonor-desktop@1x.jpg" srcset="img/catalog/leonor-desktop@2x.jpg 2x" width="260" height="386" alt="Антарктический пейзаж из круиза «Леонор».">
+                    </picture>
+                  </div>
+                  <h3>
+                    Круиз “Леонор”
+                  </h3>
                 </div>
-                <h3>
-                  Круиз “Леонор”
-                </h3>
-                <div class="catalog-card__wrapper">
+                <div class="catalog-card__side catalog-card__side--back">
+                  <span>Круиз “Леонор”</span>
                   <dl class="catalog-card__details">
                     <dt>Маршрут</dt>
                     <dd>Чили - Южная Георгия - Антарктида - Аргентина</dd>
@@ -366,22 +393,26 @@
                   </a>
                 </div>
               </li>
+
               <li class="catalog__card catalog-card">
-                <div class="catalog-card__picture">
-                  <picture>
-                    <!--
-                    <source type="image/webp" media="(max-width: 767px)" srcset="img/catalog/minion-1-mobile@1x.webp 1x, img/catalog/minion-1-mobile@2x.webp 2x">
-                    <source type="image/webp" media="(max-width: 1159px)" srcset="img/catalog/minion-1-tablet@1x.webp 1x, img/catalog/minion-1-tablet@2x.webp 2x">
-                    <source type="image/webp" srcset="img/catalog/minion-1-desktop@1x.webp 1x, img/catalog/minion-1-desktop@2x.webp 2x">
-                    -->
-                    <!-- 1x: 260px ; 2x: 520px -->
-                    <img src="img/catalog/minion-1-desktop@1x.jpg" srcset="img/catalog/minion-1-desktop@2x.jpg 2x" width="260" height="386" alt="Антарктический пейзаж из круиза «Минион - 1».">
-                  </picture>
+                <div class="catalog-card__side catalog-card__side--front">
+                  <div class="catalog-card__picture">
+                    <picture>
+                      <!--
+                      <source type="image/webp" media="(max-width: 767px)" srcset="img/catalog/minion-1-mobile@1x.webp 1x, img/catalog/minion-1-mobile@2x.webp 2x">
+                      <source type="image/webp" media="(max-width: 1159px)" srcset="img/catalog/minion-1-tablet@1x.webp 1x, img/catalog/minion-1-tablet@2x.webp 2x">
+                      <source type="image/webp" srcset="img/catalog/minion-1-desktop@1x.webp 1x, img/catalog/minion-1-desktop@2x.webp 2x">
+                      -->
+                      <!-- 1x: 260px ; 2x: 520px -->
+                      <img src="img/catalog/minion-1-desktop@1x.jpg" srcset="img/catalog/minion-1-desktop@2x.jpg 2x" width="260" height="386" alt="Антарктический пейзаж из круиза «Минион - 1».">
+                    </picture>
+                  </div>
+                  <h3>
+                    Круиз “Минион - 1”
+                  </h3>
                 </div>
-                <h3>
-                  Круиз “Минион - 1”
-                </h3>
-                <div class="catalog-card__wrapper">
+                <div class="catalog-card__side catalog-card__side--back">
+                  <span>Круиз “Минион - 1”</span>
                   <dl class="catalog-card__details">
                     <dt>Маршрут</dt>
                     <dd>Аргентина - Антарктида</dd>
@@ -401,7 +432,7 @@
           </div>
         </section>
 
-        <section class="booking section container" id="booking">
+        <section class="section booking" id="booking">
           <div class="container">
             <div class="booking__description">
               <h2>
@@ -432,7 +463,7 @@
           </div>
         </section>
 
-        <section class="contacts section container" id="contacts">
+        <section class="section contacts" id="contacts">
           <div class="container">
             <h2 class="visually-hidden">Адрес офиса компании.</h2>
             <div class="contacts__map">
@@ -463,7 +494,7 @@
                   г. Санкт Петербург, ул. Большая Конюшенная, 19/8
                 </p>
               </div>
-            
+
               <div class="contacts__phone">
                 <h3 class="visually-hidden">Телефон</h3>
                 <a href="tel:+78002000000">
@@ -481,12 +512,11 @@
       <footer class="page-footer">
         <div class="container">
           <div class="page-footer__logo logo">
-            <a href="#">
-              <picture>
-                <source media="(max-width: 767px)" srcset="img/svg/logo-mobile.svg">
-                <source media="(max-width: 1159px)" srcset="img/svg/logo-tablet.svg">
-                <img src="/img/svg/logo-desktop.svg" width="70" height="38" alt="Логотип сайта круизов в Антарктику.">
-              </picture>
+            <a href="index.html">
+              <span class="visually-hidden">На основную страницу сайта круизов в Антарктику.</span>
+              <svg width="70" height="38">
+                <use href="img/sprite_auto.svg#logo"></use>
+              </svg>
             </a>
           </div>
 

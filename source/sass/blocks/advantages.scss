@@ -1,0 +1,11 @@
+.advantages {
+  min-height: 562px;
+  background-color: $color-pattens-blue;
+  background-image: url("/img/jpg/advantages-background-desktop@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @include retina {
+    background-image: url("/img/jpg/advantages-background-desktop@2x.jpg");
+  }
+}

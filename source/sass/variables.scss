@@ -10,10 +10,16 @@ $color-transparent:                 rgba(255, 255, 255, 0);
 // Project palette
 // для нейминга цветов используем https://www.htmlcsscolor.com/hex/334482
 
+$color-black-transparent:           rgba(0, 0, 0, 0.25);
 $color-alice-blue:                  rgba(249, 251, 253, 1);
 $color-tangaroa:                    rgba(1, 28, 64, 1);
 $color-tangaroa-shadow:             rgba(1, 28, 64, 0.15);
 $color-quartz:                      rgba(216, 216, 217, 1);
+$color-dark-cerulean:               rgba(0, 62, 123, 1);
+$color-jordy-blue:                  rgba(117, 162, 212, 1);
+$color-curiosus-blue:               rgba(60, 148, 193, 1);
+$color-ship-cove:                   rgba(113, 138, 172, 1);
+$color-pattens-blue:                rgba(217, 230, 244, 1);
 
 
 
@@ -25,7 +31,7 @@ $black-to-right:                    linear-gradient(90deg, rgba(0, 0, 0, 0.75) 0
 // ---------------------------------
 
 // переменная используемая в html для подключения скейлинга
-$fz-default:                        14px;    
+$fz-default:                        14px;
 
 $ff-montserrat:                  "Montserrat", "Arial", sans-serif;
 

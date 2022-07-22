@@ -1,0 +1,40 @@
+.page-header {
+  min-height: 650px;
+  color: $color-alice-blue;
+  background-color: $color-dark-cerulean;
+  background-image: url("/img/jpg/header-background-desktop@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  box-shadow: 0 4px 4px $color-black-transparent;
+
+  @include retina {
+    background-image: url("/img/jpg/header-background-desktop@2x.jpg");
+  }
+}
+
+.page-header__navigation a {
+  color: $color-alice-blue;
+  font-weight: 500;
+  line-height: 19.5px;
+
+  &:hover,
+  &:focus {
+    color: $color-ship-cove;
+  }
+
+  &:active {
+    color: $color-curiosus-blue;
+  }
+}
+
+.page-header__title h1 {
+  margin: 0;
+  font-size: 54px;
+  line-height: 65.83px;
+}
+
+.page-header__title p {
+  font-size: 20px;
+  line-height: 24.38px;
+}
