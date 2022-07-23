@@ -4,6 +4,10 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+
+  &--footer {
+    justify-content: start;
+  }
 }
 
 .navigation__item {

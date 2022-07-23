@@ -1,4 +1,14 @@
 .page-footer {
-  min-height: 138px;
   background-color: $color-tangaroa;
+}
+
+.page-footer__wrapper {
+  display: grid;
+  grid-template-columns: 70px 1fr 106px;
+  align-items: center;
+  min-height: 138px;
+}
+
+.page-footer__logo {
+  padding-right: 7px;
 }
