@@ -635,6 +635,13 @@ button,
   list-style: none;
 }
 
+.advantages-card {
+  min-height: 241px;
+  background-color: #f9fbfd;
+  margin: 0;
+  padding: 30px 40px 30px 30px;
+}
+
 .advantages-card h3 {
   font-weight: 500;
   font-size: 18px;
@@ -662,11 +669,26 @@ button,
   margin: 0;
 }
 
+.advantages__list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+  grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: (1fr)[1];
+  grid-template-rows: repeat(1, 1fr);
+  -webkit-column-gap: 40px;
+  -moz-column-gap: 40px;
+  column-gap: 40px;
+  row-gap: 40px;
+}
+
 .booking-form {
   background-color: #011c40;
   -webkit-box-shadow: 0px 4px 45px rgba(1, 28, 64, 0.15);
   box-shadow: 0px 4px 45px rgba(1, 28, 64, 0.15);
-  width: 403px;
+  max-width: 403px;
+  min-height: 455px;
+  padding: 50px;
 }
 
 .booking-form h3 {
@@ -755,6 +777,17 @@ button,
   margin-bottom: 25px;
 }
 
+.booking-form__agreement input:hover {
+  border-color: #75a2d4;
+  outline-color: #75a2d4;
+}
+
+.booking-form__agreement input:active,
+.booking-form__agreement input:focus {
+  border-color: #3c94c1;
+  outline-color: #3c94c1;
+}
+
 .booking-form__agreement label {
   color: #f9fbfd;
   font-size: 10px;
@@ -763,7 +796,7 @@ button,
 
 .booking-form__agreement input + label {
   position: relative;
-  padding-left: 25px;
+  padding-left: 24px;
 }
 
 .booking-form__agreement input + label::before {
@@ -772,6 +805,18 @@ button,
   left: 0px;
   top: -2px;
   background-image: url("/img/svg/icon-checkbox-off.svg");
+  width: 18px;
+  height: 18px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.booking-form__agreement input:checked + label::after {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: -2px;
+  background-image: url("/img/svg/icon-checkbox-on.svg");
   width: 18px;
   height: 18px;
   background-repeat: no-repeat;
@@ -798,6 +843,16 @@ button,
   line-height: 27px;
 }
 
+.booking__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 0 60px;
+}
+
 .button {
   color: #011c40;
   background-color: #f9fbfd;
@@ -818,37 +873,102 @@ button,
 
 .catalog-card {
   color: #f9fbfd;
-}
-
-.catalog-card__side {
+  line-height: 19.6px;
   width: 260px;
-  height: 386px;
+  min-height: 386px;
+  display: -ms-grid;
+  display: grid;
+  grid-template-areas: "card-area";
 }
 
-.catalog-card__side--front h3 {
+.catalog-card:hover {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  background-color: #011c40;
+}
+
+.catalog-card:hover .catalog-card__side--front {
+  display: none;
+}
+
+.catalog-card:hover .catalog-card__side--back {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.catalog-card__side--front {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: card-area;
+  position: relative;
+}
+
+.catalog-card h3 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: card-area;
+  z-index: 1;
   font-weight: 500;
   font-size: 18px;
   line-height: 27px;
   margin: 0;
-  margin-top: -48px;
+  margin: auto 30px 25px;
+  padding: 0;
 }
 
 .catalog-card__side--back {
-  background-color: #011c40;
+  display: none;
+  min-height: 302px;
+  padding: 0 25px;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.catalog-card__side--back span {
+.catalog-card__side--back dl,
+.catalog-card__side--back dt,
+.catalog-card__side--back dd {
+  margin: 0;
+}
+
+.catalog-card__side--back dt {
   font-weight: 500;
-  font-size: 18px;
-  line-height: 27px;
+}
+
+.catalog-card__side--back dd {
+  color: #d8d8d9;
 }
 
 .catalog h2 {
   font-weight: 600;
   font-size: 28px;
   line-height: 42px;
+  margin: 0;
+}
+
+.catalog__list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+  grid-template-columns: repeat(4, 1fr);
+  -ms-grid-rows: (1fr)[2];
+  grid-template-rows: repeat(2, 1fr);
+  -webkit-column-gap: 30px;
+  -moz-column-gap: 30px;
+  column-gap: 30px;
+  row-gap: 30px;
+}
+
+.catalog__card {
   margin: 0;
 }
 

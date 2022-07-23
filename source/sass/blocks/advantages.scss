@@ -16,3 +16,11 @@
   line-height: 42px;
   margin: 0;
 }
+
+.advantages__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  column-gap: 40px;
+  row-gap: 40px;
+}
