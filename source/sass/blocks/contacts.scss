@@ -3,14 +3,16 @@
 }
 
 .contacts__wrapper {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  column-gap: 40px;
+  row-gap: 30px;
 }
 
 .contacts__map {
   position: relative;
   overflow: hidden;
-  padding-right: 100px;
 }
 
 .contacts__map iframe {
@@ -30,7 +32,8 @@
 }
 
 .contacts__info {
-  max-width: 500px;
+  align-self: center;
+  padding-left: 60px;
 }
 
 .contacts__slogan p {

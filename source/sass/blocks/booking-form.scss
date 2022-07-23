@@ -19,7 +19,7 @@
   margin-bottom: 20px;
   padding: 11px 16px;
   color: $color-tangaroa;
-  border: 2px solid $color-alice-blue;
+  border: none;
 
   &::placeholder {
     color: $color-tangaroa-placeholder;
@@ -27,14 +27,13 @@
   }
 
   &:hover {
-    border-color: $color-jordy-blue;
-    outline-color: $color-jordy-blue;
+    box-shadow: inset 0 0 0 2px $color-curiosus-blue;
   }
 
   &:active,
   &:focus {
-    border-color: $color-curiosus-blue;
-    outline-color: $color-curiosus-blue;
+    outline: solid 1px $color-curiosus-blue;
+    outline-offset: 2px;
 
     &::placeholder {
       color: transparent;
@@ -48,17 +47,16 @@
 }
 
 .booking-form__agreement input {
-  &:hover {
-    border-color: $color-jordy-blue;
-    outline-color: $color-jordy-blue;
-  }
-
-  &:active,
-  &:focus {
-    border-color: $color-curiosus-blue;
-    outline-color: $color-curiosus-blue;
-
-  }
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  border: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
 }
 
 .booking-form__agreement label {
@@ -82,6 +80,12 @@
   height: 18px;
   background-repeat: no-repeat;
   cursor: pointer;
+}
+
+.booking-form__agreement input:focus + label::before,
+.booking-form__agreement input:active + label::before {
+  outline: solid 1px $color-curiosus-blue;
+  outline-offset: 2px;
 }
 
 .booking-form__agreement input:checked + label::after {

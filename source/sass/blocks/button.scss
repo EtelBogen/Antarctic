@@ -9,9 +9,17 @@
   &:hover,
   &:focus {
     background-color: $color-ship-cove;
+    color: $color-alice-blue;
   }
 
   &:active {
     background-color: $color-curiosus-blue;
+    color: $color-alice-blue;
+  }
+
+  &:focus,
+  &:active {
+    outline: solid 1px $color-curiosus-blue;
+    outline-offset: 2px;
   }
 }

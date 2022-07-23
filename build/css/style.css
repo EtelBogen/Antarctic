@@ -625,8 +625,9 @@ button,
 }
 
 .container {
-  width: 1160px;
+  width: 1220px;
   margin: 0 auto;
+  padding: 0 30px;
 }
 
 .list-reset {
@@ -704,7 +705,7 @@ button,
   margin-bottom: 20px;
   padding: 11px 16px;
   color: #011c40;
-  border: 2px solid #f9fbfd;
+  border: none;
 }
 
 .booking-form input::-webkit-input-placeholder {
@@ -733,14 +734,14 @@ button,
 }
 
 .booking-form input:hover {
-  border-color: #75a2d4;
-  outline-color: #75a2d4;
+  -webkit-box-shadow: inset 0 0 0 2px #3c94c1;
+  box-shadow: inset 0 0 0 2px #3c94c1;
 }
 
 .booking-form input:active,
 .booking-form input:focus {
-  border-color: #3c94c1;
-  outline-color: #3c94c1;
+  outline: solid 1px #3c94c1;
+  outline-offset: 2px;
 }
 
 .booking-form input:active::-webkit-input-placeholder,
@@ -777,15 +778,18 @@ button,
   margin-bottom: 25px;
 }
 
-.booking-form__agreement input:hover {
-  border-color: #75a2d4;
-  outline-color: #75a2d4;
-}
-
-.booking-form__agreement input:active,
-.booking-form__agreement input:focus {
-  border-color: #3c94c1;
-  outline-color: #3c94c1;
+.booking-form__agreement input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  border: 0;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
 }
 
 .booking-form__agreement label {
@@ -811,6 +815,12 @@ button,
   cursor: pointer;
 }
 
+.booking-form__agreement input:focus + label::before,
+.booking-form__agreement input:active + label::before {
+  outline: solid 1px #3c94c1;
+  outline-offset: 2px;
+}
+
 .booking-form__agreement input:checked + label::after {
   content: "";
   position: absolute;
@@ -831,6 +841,25 @@ button,
   background-size: cover;
 }
 
+.booking__wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+  grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: (1fr)[1];
+  grid-template-rows: repeat(1, 1fr);
+  -webkit-column-gap: 40px;
+  -moz-column-gap: 40px;
+  column-gap: 40px;
+  row-gap: 30px;
+}
+
+.booking__description {
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+}
+
 .booking h2 {
   font-weight: 700;
   font-size: 40px;
@@ -841,16 +870,6 @@ button,
 .booking p {
   font-size: 18px;
   line-height: 27px;
-}
-
-.booking__wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  padding: 0 60px;
 }
 
 .button {
@@ -865,10 +884,18 @@ button,
 .button:hover,
 .button:focus {
   background-color: #718aac;
+  color: #f9fbfd;
 }
 
 .button:active {
   background-color: #3c94c1;
+  color: #f9fbfd;
+}
+
+.button:focus,
+.button:active {
+  outline: solid 1px #3c94c1;
+  outline-offset: 2px;
 }
 
 .catalog-card {
@@ -977,18 +1004,21 @@ button,
 }
 
 .contacts__wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+  grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: (1fr)[1];
+  grid-template-rows: repeat(1, 1fr);
+  -webkit-column-gap: 40px;
+  -moz-column-gap: 40px;
+  column-gap: 40px;
+  row-gap: 30px;
 }
 
 .contacts__map {
   position: relative;
   overflow: hidden;
-  padding-right: 100px;
 }
 
 .contacts__map iframe {
@@ -1008,7 +1038,10 @@ button,
 }
 
 .contacts__info {
-  max-width: 500px;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+  padding-left: 60px;
 }
 
 .contacts__slogan p {
@@ -1084,7 +1117,6 @@ button,
 
 .page-header {
   min-height: 650px;
-  padding: 0 103px;
   color: #f9fbfd;
   background-color: #003e7b;
   background-image: url("/img/jpg/header-background-desktop@1x.jpg");
@@ -1145,23 +1177,30 @@ button,
 }
 
 .promo__wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+  grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: (1fr)[1];
+  grid-template-rows: repeat(1, 1fr);
+  -webkit-column-gap: 40px;
+  -moz-column-gap: 40px;
+  column-gap: 40px;
+  row-gap: 30px;
 }
 
-.promo h2 {
+.promo__info {
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+  padding-right: 91px;
+}
+
+.promo__info h2 {
   font-weight: 600;
   font-size: 28px;
   line-height: 42px;
   margin: 0;
-}
-
-.promo__info {
-  width: 512px;
 }
 
 .promo_info p {
