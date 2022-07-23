@@ -1,0 +1,23 @@
+.booking {
+  min-height: 555px;
+  background-color: $color-pattens-blue-2;
+  background-image: url("/img/jpg/booking-background-desktop@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @include retina {
+    background-image: url("/img/jpg/booking-background-desktop@2x.jpg");
+  }
+}
+
+.booking h2 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 60px;
+  margin: 0;
+}
+
+.booking p {
+  font-size: 18px;
+  line-height: 27px;
+}

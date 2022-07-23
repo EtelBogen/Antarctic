@@ -2,7 +2,27 @@
   min-height: 548px;
 }
 
-.promo__wrapper p{
+.promo__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.promo h2 {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 42px;
+  margin: 0;
+}
+
+.promo__info {
+  width: 512px;
+}
+
+.promo_info p{
   font-size: 16px;
   margin: 0;
+}
+
+.promo__picture {
+  width: 560px;
 }

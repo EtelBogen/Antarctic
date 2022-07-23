@@ -1,0 +1,48 @@
+.contacts {
+  min-height: 546px;
+}
+
+.contacts__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contacts__map {
+  position: relative;
+  overflow: hidden;
+  padding-right: 100px;
+}
+
+.contacts__map iframe {
+  position: relative;
+  z-index: 2;
+  width: 560px;
+  height: 306px;
+  padding: 0;
+}
+
+.contacts__map img {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  margin: 0;
+}
+
+.contacts__info {
+  max-width: 500px;
+}
+
+.contacts__slogan p {
+  margin: 0;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.contacts__address p,
+.contacts__phone p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 24px;
+}

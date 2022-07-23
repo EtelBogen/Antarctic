@@ -1,0 +1,70 @@
+.booking-form {
+  background-color: $color-tangaroa;
+  box-shadow: 0px 4px 45px $color-tangaroa-shadow;
+  width: 403px;
+}
+
+.booking-form h3{
+  color: $color-alice-blue;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.booking-form input {
+  width: 303px;
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 11px 16px;
+  color: $color-tangaroa;
+  border: 2px solid $color-alice-blue;
+
+  &::placeholder {
+    color: $color-tangaroa-placeholder;
+    opacity: 1;
+  }
+
+  &:hover {
+    border-color: $color-jordy-blue;
+    outline-color: $color-jordy-blue;
+  }
+
+  &:active,
+  &:focus {
+    border-color: $color-curiosus-blue;
+    outline-color: $color-curiosus-blue;
+
+    &::placeholder {
+      color: transparent;
+      opacity: 1;
+    }
+  }
+}
+
+.booking-form__agreement {
+  margin-bottom: 25px;
+}
+
+.booking-form__agreement label {
+  color: $color-alice-blue;
+  font-size: 10px;
+  line-height: 13px;
+}
+
+.booking-form__agreement input + label {
+  position: relative;
+  padding-left: 25px;
+}
+
+.booking-form__agreement input + label::before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: -2px;
+  background-image: url("/img/svg/icon-checkbox-off.svg");
+  width: 18px;
+  height: 18px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+

@@ -1,0 +1,26 @@
+.navigation {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navigation__item {
+  padding-left: 33px;
+}
+
+.navigation a {
+  color: $color-alice-blue;
+  font-weight: 500;
+  line-height: 19.5px;
+
+  &:hover,
+  &:focus {
+    color: $color-ship-cove;
+  }
+
+  &:active {
+    color: $color-curiosus-blue;
+  }
+}

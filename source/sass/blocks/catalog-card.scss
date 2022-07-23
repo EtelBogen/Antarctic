@@ -2,7 +2,26 @@
   color: $color-alice-blue;
 }
 
+.catalog-card__side {
+  width: 260px;
+  height: 386px;
+}
+
+.catalog-card__side--front h3 {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  margin: 0;
+  margin-top: -48px;
+}
+
+.catalog-card__side--back {
+  background-color: $color-tangaroa;
+  box-shadow: 0px 4px 4px $color-black-transparent;
+}
+
 .catalog-card__side--back span {
+  font-weight: 500;
   font-size: 18px;
   line-height: 27px;
 }

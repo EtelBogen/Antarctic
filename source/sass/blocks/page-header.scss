@@ -1,5 +1,6 @@
 .page-header {
   min-height: 650px;
+  padding: 0 103px;
   color: $color-alice-blue;
   background-color: $color-dark-cerulean;
   background-image: url("/img/jpg/header-background-desktop@1x.jpg");
@@ -13,19 +14,21 @@
   }
 }
 
-.page-header__navigation a {
-  color: $color-alice-blue;
-  font-weight: 500;
-  line-height: 19.5px;
+.page-header__navigation-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 35px;
+}
 
-  &:hover,
-  &:focus {
-    color: $color-ship-cove;
-  }
+.page-header__menu-toggle {
+  display: none;
+}
 
-  &:active {
-    color: $color-curiosus-blue;
-  }
+.page-header__title {
+  padding-top: 210px;
+  padding-left: 95px;
 }
 
 .page-header__title h1 {
