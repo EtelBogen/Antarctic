@@ -17,6 +17,10 @@
     display: none;
   }
 
+  &:hover h3 {
+    margin: 27px 30px 16px 25px;
+  }
+
   &:hover .catalog-card__side--back {
     display: flex;
     flex-direction: column;
@@ -26,17 +30,6 @@
 .catalog-card__side--front {
   grid-area: card-area;
   position: relative;
-}
-
-.catalog-card h3 {
-  grid-area: card-area;
-  z-index: 1;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 27px;
-  margin: 0;
-  margin: auto 30px 25px;
-  padding: 0;
 }
 
 .catalog-card__side--back {
@@ -52,10 +45,19 @@
   margin: 0;
 }
 
+.catalog-card__side--back dl {
+  padding-bottom: 12px;
+}
+
 .catalog-card__side--back dt {
   font-weight: 500;
 }
 
 .catalog-card__side--back dd {
   color: $color-quartz;
+  padding-bottom: 13px;
+}
+
+.catalog-card__button {
+  padding: 10px 47px 9px;
 }

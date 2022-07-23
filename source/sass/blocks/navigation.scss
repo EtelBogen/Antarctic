@@ -4,6 +4,7 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+  padding-bottom: 6px;
 
   &--footer {
     justify-content: start;
@@ -11,12 +12,13 @@
 }
 
 .navigation__item {
-  padding-left: 33px;
+  padding-left: 34px;
 }
 
 .navigation a {
   color: $color-alice-blue;
   font-weight: 500;
+  font-size: 16px;
   line-height: 19.5px;
 
   &:hover,

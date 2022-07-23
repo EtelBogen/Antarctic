@@ -2,7 +2,16 @@
   min-height: 241px;
   background-color: $color-alice-blue;
   margin: 0;
-  padding: 30px 40px 30px 30px;
+  padding: 30px 33px 26px 30px;
+}
+
+.advantages-card__icon {
+  min-height: 32px;
+  margin-bottom: 18px;
+}
+
+.advantages-card__icon svg {
+  vertical-align: middle;
 }
 
 .advantages-card h3 {
@@ -10,6 +19,7 @@
   font-size: 18px;
   line-height: 27px;
   margin: 0;
+  padding-bottom: 10px;
 }
 
 .advantages-card p {
