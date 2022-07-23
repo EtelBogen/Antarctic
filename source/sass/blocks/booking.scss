@@ -21,6 +21,7 @@
 
 .booking__description {
   align-self: center;
+  padding-left: 60px;
 }
 
 .booking h2 {
@@ -28,9 +29,16 @@
   font-size: 40px;
   line-height: 60px;
   margin: 0;
+  margin-top: -8px;
 }
 
 .booking p {
   font-size: 18px;
   line-height: 27px;
+  margin: 0;
+  margin-top: 10px;
+}
+
+.booking__form {
+  margin-left: 97px;
 }

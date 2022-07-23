@@ -701,7 +701,7 @@ button,
   box-shadow: 0px 4px 45px rgba(1, 28, 64, 0.15);
   max-width: 403px;
   min-height: 455px;
-  padding: 50px;
+  padding: 44px 50px 50px;
 }
 
 .booking-form h3 {
@@ -709,13 +709,15 @@ button,
   font-weight: 500;
   font-size: 18px;
   line-height: 27px;
+  margin: 0;
+  padding-bottom: 28px;
 }
 
 .booking-form input {
   width: 303px;
   margin: 0;
   margin-bottom: 20px;
-  padding: 11px 16px;
+  padding: 12px 16px;
   color: #011c40;
   border: none;
 }
@@ -819,7 +821,7 @@ button,
   content: "";
   position: absolute;
   left: 0px;
-  top: -2px;
+  top: -5px;
   background-image: url("/img/svg/icon-checkbox-off.svg");
   width: 18px;
   height: 18px;
@@ -837,12 +839,16 @@ button,
   content: "";
   position: absolute;
   left: 0px;
-  top: -2px;
+  top: -5px;
   background-image: url("/img/svg/icon-checkbox-on.svg");
   width: 18px;
   height: 18px;
   background-repeat: no-repeat;
   cursor: pointer;
+}
+
+.booking-form__button {
+  padding: 11px 89px 12px;
 }
 
 .booking {
@@ -870,6 +876,7 @@ button,
   -ms-flex-item-align: center;
   -ms-grid-row-align: center;
   align-self: center;
+  padding-left: 60px;
 }
 
 .booking h2 {
@@ -877,11 +884,18 @@ button,
   font-size: 40px;
   line-height: 60px;
   margin: 0;
+  margin-top: -8px;
 }
 
 .booking p {
   font-size: 18px;
   line-height: 27px;
+  margin: 0;
+  margin-top: 10px;
+}
+
+.booking__form {
+  margin-left: 97px;
 }
 
 .button {
@@ -1272,6 +1286,11 @@ button,
 .section--advantages,
 .section--catalog {
   padding-top: 103px;
+}
+
+.section--booking {
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .socials {
