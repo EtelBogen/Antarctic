@@ -1087,7 +1087,7 @@ button,
 }
 
 .contacts__slogan {
-  margin: 10px 0 29px;
+  margin: 10px 0 33px;
 }
 
 .contacts__slogan p {
@@ -1154,6 +1154,7 @@ button,
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: start;
+  padding-left: 5px;
 }
 
 .navigation__item {
@@ -1189,10 +1190,7 @@ button,
   -ms-flex-align: center;
   align-items: center;
   min-height: 138px;
-}
-
-.page-footer__logo {
-  padding-right: 7px;
+  padding-top: 6px;
 }
 
 .page-header {
@@ -1324,6 +1322,7 @@ button,
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding-top: 7px;
 }
 
 /* @media (hover: hover), screen and (min-width: 0\0) {
