@@ -34,18 +34,35 @@
 .contacts__info {
   align-self: center;
   padding-left: 60px;
+  font-size: 16px;
+}
+
+.contacts__slogan {
+  margin: 10px 0 29px;
 }
 
 .contacts__slogan p {
-  margin: 0;
   font-weight: 500;
   font-size: 18px;
   line-height: 27px;
+  margin: 0;
+}
+
+.contacts__address,
+.contacts__phone {
+  margin: 0 0 20px;
+}
+
+.contacts__address svg,
+.contacts__phone svg {
+  vertical-align: middle;
 }
 
 .contacts__address p,
-.contacts__phone p {
-  margin: 0;
+.contacts__phone a {
+  display: inline-block;
   font-size: 16px;
   line-height: 24px;
+  margin: 0;
+  margin-left: 6px;
 }
