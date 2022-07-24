@@ -1,5 +1,9 @@
 .promo {
   min-height: 548px;
+
+  @include vp-1159 {
+    min-height: 464px;
+  }
 }
 
 .promo__wrapper {
@@ -8,11 +12,19 @@
   grid-template-rows: repeat(1, 1fr);
   column-gap: 40px;
   row-gap: 30px;
+
+  @include vp-1159 {
+    column-gap: 30px;
+  }
 }
 
 .promo__info {
   align-self: center;
   padding-right: 47px;
+
+  @include vp-1159 {
+    padding-right: 0;
+  }
 }
 
 .promo__info h2 {
@@ -20,14 +32,29 @@
   font-size: 28px;
   line-height: 42px;
   margin:-4px 0 0;
+
+  @include vp-1159 {
+    font-size: 26px;
+    line-height: 36.4px;
+  }
 }
 
 .promo__info p{
   font-size: 16px;
   margin: 0;
   padding: 24px 0 0;
+
+  @include vp-1159 {
+    padding-top: 10px;
+  }
 }
 
-.promo__picture {
-  width: 560px;
+.promo__picture img,
+.promo__picture picture {
+  object-fit: cover;
+
+  @include vp-1159 {
+    min-width: 324px;
+    min-height: 264px;
+  }
 }

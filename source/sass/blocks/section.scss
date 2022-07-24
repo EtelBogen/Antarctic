@@ -2,6 +2,11 @@
   padding-top: 120px;
   padding-bottom: 120px;
 
+  @include vp-1159 {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
   &--advantages,
   &--catalog {
     padding-top: 103px;

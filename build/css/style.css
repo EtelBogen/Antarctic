@@ -625,7 +625,8 @@ button,
 }
 
 .container {
-  width: 1220px;
+  width: 100%;
+  max-width: 1220px;
   margin: 0 auto;
   padding: 0 30px;
 }
@@ -1289,8 +1290,10 @@ button,
   padding: 24px 0 0;
 }
 
-.promo__picture {
-  width: 560px;
+.promo__picture img,
+.promo__picture picture {
+  -o-object-fit: cover;
+  object-fit: cover;
 }
 
 .section {
@@ -1325,6 +1328,19 @@ button,
   padding-top: 7px;
 }
 
+.socials__item svg {
+  fill: #f9fbfd;
+}
+
+.socials__item svg:hover,
+.socials__item svg:focus {
+  fill: #718aac;
+}
+
+.socials__item svg:active {
+  fill: #3c94c1;
+}
+
 /* @media (hover: hover), screen and (min-width: 0\0) {
   &:hover,
   &:focus {
@@ -1337,9 +1353,85 @@ button,
     padding: 0 45px;
   }
 
+  .advantages {
+    background-image: url("/img/jpg/advantages-background-tablet@1x.jpg");
+  }
+
   .logo svg {
     width: 38px;
     height: 20px;
+  }
+
+  .navigation__item {
+    padding-left: 23px;
+  }
+
+  .navigation a {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .page-header {
+    min-height: 638px;
+    background-image: url("/img/jpg/header-background-tablet@1x.jpg");
+  }
+
+  .page-header__title {
+    padding-left: 0;
+  }
+
+  .page-header__title h1 {
+    font-size: 50px;
+    line-height: 61px;
+  }
+
+  .page-header__title p {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .promo {
+    min-height: 464px;
+  }
+
+  .promo__wrapper {
+    -webkit-column-gap: 30px;
+    -moz-column-gap: 30px;
+    column-gap: 30px;
+  }
+
+  .promo__info {
+    padding-right: 0;
+  }
+
+  .promo__info h2 {
+    font-size: 26px;
+    line-height: 36.4px;
+  }
+
+  .promo__info p {
+    padding-top: 10px;
+  }
+
+  .promo__picture img,
+  .promo__picture picture {
+    min-width: 324px;
+    min-height: 264px;
+  }
+
+  .section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+
+@media (max-width: 1159px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1159px) and (-o-min-device-pixel-ratio: 3/2), (max-width: 1159px) and (min-resolution: 144dpi), (max-width: 1159px) and (min-resolution: 1.5dppx) {
+  .advantages {
+    background-image: url("/img/jpg/advantages-background-tablet@2x.jpg");
+  }
+
+  .page-header {
+    background-image: url("/img/jpg/header-background-tablet@2x.jpg");
   }
 }
 

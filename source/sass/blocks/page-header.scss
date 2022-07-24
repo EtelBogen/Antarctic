@@ -11,6 +11,15 @@
   @include retina {
     background-image: url("/img/jpg/header-background-desktop@2x.jpg");
   }
+
+  @include vp-1159 {
+    min-height: 638px;
+    background-image: url("/img/jpg/header-background-tablet@1x.jpg");
+
+    @include retina {
+      background-image: url("/img/jpg/header-background-tablet@2x.jpg");
+    }
+  }
 }
 
 .page-header__navigation-wrapper {
@@ -28,12 +37,21 @@
 .page-header__title {
   padding-top: 190px;
   padding-left: 95px;
+
+  @include vp-1159 {
+    padding-left: 0;
+  }
 }
 
 .page-header__title h1 {
   margin: 0;
   font-size: 54px;
   line-height: 65.83px;
+
+  @include vp-1159 {
+    font-size: 50px;
+    line-height: 61px;
+  }
 }
 
 .page-header__title p {
@@ -41,4 +59,9 @@
   padding: 12px 0;
   font-size: 20px;
   line-height: 24.38px;
+
+  @include vp-1159 {
+    font-size: 18px;
+    line-height: 22px;
+  }
 }

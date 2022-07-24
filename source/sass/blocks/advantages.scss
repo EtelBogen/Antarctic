@@ -8,6 +8,14 @@
   @include retina {
     background-image: url("/img/jpg/advantages-background-desktop@2x.jpg");
   }
+
+  @include vp-1159 {
+    background-image: url("/img/jpg/advantages-background-tablet@1x.jpg");
+
+    @include retina {
+      background-image: url("/img/jpg/advantages-background-tablet@2x.jpg");
+    }
+  }
 }
 
 .advantages h2 {
