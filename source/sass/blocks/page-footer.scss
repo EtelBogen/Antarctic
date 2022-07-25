@@ -8,4 +8,9 @@
   align-items: center;
   min-height: 138px;
   padding-top: 6px;
+
+  @include vp-1159 {
+    min-height: 120px;
+    grid-template-columns: 38px 1fr 87px;
+  }
 }

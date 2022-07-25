@@ -15,6 +15,7 @@
   @include vp-1159 {
     min-height: 638px;
     background-image: url("/img/jpg/header-background-tablet@1x.jpg");
+    box-shadow: none;
 
     @include retina {
       background-image: url("/img/jpg/header-background-tablet@2x.jpg");

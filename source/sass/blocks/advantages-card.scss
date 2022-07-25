@@ -3,6 +3,11 @@
   background-color: $color-alice-blue;
   margin: 0;
   padding: 30px 33px 26px 30px;
+
+  @include vp-1159 {
+    min-height: 310px;
+    min-width: 206px;
+  }
 }
 
 .advantages-card__icon {

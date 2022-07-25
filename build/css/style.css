@@ -700,7 +700,7 @@ button,
   background-color: #011c40;
   -webkit-box-shadow: 0px 4px 45px rgba(1, 28, 64, 0.15);
   box-shadow: 0px 4px 45px rgba(1, 28, 64, 0.15);
-  max-width: 403px;
+  width: 403px;
   min-height: 455px;
   padding: 44px 50px 50px;
 }
@@ -715,7 +715,7 @@ button,
 }
 
 .booking-form input {
-  width: 303px;
+  width: 100%;
   margin: 0;
   margin-bottom: 20px;
   padding: 12px 16px;
@@ -849,7 +849,7 @@ button,
 }
 
 .booking-form__button {
-  padding: 11px 89px 12px;
+  padding: 11px 11px 12px;
 }
 
 .booking {
@@ -905,6 +905,9 @@ button,
   font-weight: 600;
   line-height: 21px;
   border: none;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .button:hover,
@@ -970,9 +973,15 @@ button,
   position: relative;
 }
 
+.catalog-card picture,
+.catalog-card img {
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
 .catalog-card__side--back {
   display: none;
-  min-height: 302px;
+  min-height: 316px;
   padding: 0 25px;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -998,7 +1007,7 @@ button,
 }
 
 .catalog-card__button {
-  padding: 10px 47px 9px;
+  padding: 10px 10px 9px;
 }
 
 .catalog h2 {
@@ -1038,7 +1047,7 @@ button,
 }
 
 .catalog__card {
-  margin: 0;
+  margin: 0 auto;
 }
 
 .contacts {
@@ -1063,11 +1072,17 @@ button,
   overflow: hidden;
 }
 
+.contacts__map iframe,
+.contacts__map img {
+  min-width: 560px;
+  height: 306px;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
 .contacts__map iframe {
   position: relative;
   z-index: 2;
-  width: 560px;
-  height: 306px;
   padding: 0;
 }
 
@@ -1353,8 +1368,80 @@ button,
     padding: 0 45px;
   }
 
+  .advantages-card {
+    min-height: 310px;
+    min-width: 206px;
+  }
+
   .advantages {
+    min-height: 588px;
     background-image: url("/img/jpg/advantages-background-tablet@1x.jpg");
+  }
+
+  .advantages__list {
+    -webkit-column-gap: 30px;
+    -moz-column-gap: 30px;
+    column-gap: 30px;
+    row-gap: 30px;
+  }
+
+  .booking-form {
+    width: auto;
+  }
+
+  .booking {
+    min-height: 805px;
+    background-image: url("/img/jpg/booking-background-tablet@1x.jpg");
+  }
+
+  .booking__wrapper {
+    display: block;
+  }
+
+  .booking__description {
+    padding-left: 0;
+    padding-bottom: 60px;
+    text-align: center;
+  }
+
+  .booking__form {
+    margin: 0 137px;
+  }
+
+  .catalog-card {
+    width: 309px;
+  }
+
+  .catalog-card picture,
+  .catalog-card img {
+    width: 309px;
+    height: 386px;
+  }
+
+  .catalog-card__side--back {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+
+  .catalog__list {
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: (1fr)[4];
+    grid-template-rows: repeat(4, 1fr);
+  }
+
+  .contacts {
+    min-height: 535px;
+  }
+
+  .contacts__map iframe,
+  .contacts__map img {
+    min-width: 324px;
+    height: 335px;
+  }
+
+  .contacts__info {
+    padding-left: 0;
   }
 
   .logo svg {
@@ -1371,9 +1458,22 @@ button,
     line-height: 17px;
   }
 
+  .navigation--footer a {
+    font-size: 12px;
+    line-height: 14.63px;
+  }
+
+  .page-footer__wrapper {
+    min-height: 120px;
+    -ms-grid-columns: 38px 1fr 87px;
+    grid-template-columns: 38px 1fr 87px;
+  }
+
   .page-header {
     min-height: 638px;
     background-image: url("/img/jpg/header-background-tablet@1x.jpg");
+    -webkit-box-shadow: none;
+    box-shadow: none;
   }
 
   .page-header__title {
@@ -1428,6 +1528,10 @@ button,
 @media (max-width: 1159px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1159px) and (-o-min-device-pixel-ratio: 3/2), (max-width: 1159px) and (min-resolution: 144dpi), (max-width: 1159px) and (min-resolution: 1.5dppx) {
   .advantages {
     background-image: url("/img/jpg/advantages-background-tablet@2x.jpg");
+  }
+
+  .booking {
+    background-image: url("/img/jpg/booking-background-tablet@2x.jpg");
   }
 
   .page-header {

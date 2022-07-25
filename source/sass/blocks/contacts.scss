@@ -1,5 +1,9 @@
 .contacts {
   min-height: 546px;
+
+  @include vp-1159 {
+    min-height: 535px;
+  }
 }
 
 .contacts__wrapper {
@@ -15,11 +19,21 @@
   overflow: hidden;
 }
 
+.contacts__map iframe,
+.contacts__map img {
+  min-width: 560px;
+  height: 306px;
+  object-fit: cover;
+
+  @include vp-1159 {
+    min-width: 324px;
+    height: 335px;
+  }
+}
+
 .contacts__map iframe {
   position: relative;
   z-index: 2;
-  width: 560px;
-  height: 306px;
   padding: 0;
 }
 
@@ -35,6 +49,10 @@
   align-self: center;
   padding-left: 60px;
   font-size: 16px;
+
+  @include vp-1159 {
+    padding-left: 0;
+  }
 }
 
 .contacts__slogan {

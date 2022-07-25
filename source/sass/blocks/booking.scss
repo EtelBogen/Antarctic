@@ -8,6 +8,15 @@
   @include retina {
     background-image: url("/img/jpg/booking-background-desktop@2x.jpg");
   }
+
+  @include vp-1159 {
+    min-height: 805px;
+    background-image: url("/img/jpg/booking-background-tablet@1x.jpg");
+
+    @include retina {
+      background-image: url("/img/jpg/booking-background-tablet@2x.jpg");
+    }
+  }
 }
 
 .booking__wrapper {
@@ -16,12 +25,22 @@
   grid-template-rows: repeat(1, 1fr);
   column-gap: 40px;
   row-gap: 30px;
+
+  @include vp-1159 {
+    display: block;
+  }
 }
 
 
 .booking__description {
   align-self: center;
   padding-left: 60px;
+
+  @include vp-1159 {
+    padding-left: 0;
+    padding-bottom: 60px;
+    text-align: center;
+  }
 }
 
 .booking h2 {
@@ -41,4 +60,8 @@
 
 .booking__form {
   margin-left: 97px;
+
+  @include vp-1159 {
+    margin: 0 137px;
+  }
 }

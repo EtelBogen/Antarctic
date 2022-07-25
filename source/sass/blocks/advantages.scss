@@ -10,6 +10,7 @@
   }
 
   @include vp-1159 {
+    min-height: 588px;
     background-image: url("/img/jpg/advantages-background-tablet@1x.jpg");
 
     @include retina {
@@ -33,4 +34,9 @@
   grid-template-rows: repeat(1, 1fr);
   column-gap: 40px;
   row-gap: 40px;
+
+  @include vp-1159 {
+    column-gap: 30px;
+    row-gap: 30px;
+  }
 }

@@ -40,3 +40,10 @@
     color: $color-curiosus-blue;
   }
 }
+
+.navigation--footer a {
+  @include vp-1159 {
+    font-size: 12px;
+    line-height: 14.63px;
+  }
+}
