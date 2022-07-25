@@ -16,36 +16,38 @@
     <link rel="apple-touch-icon" href="favicon/apple-touch-icon.png">
     <link rel="manifest" href="favicon/manifest.webmanifest">
   </head>
-  <body class="page__body">
+  <body class="page__body page__body--scroll-off">
     <div class="wrapper">
-      <header class="page-header">
+      <header class="page-header page-header--menu-opened">
         <div class="container">
-          <div class="page-header__navigation-wrapper">
-            <div class="page-header__logo logo logo--header">
-              <a href="index.html">
-                <span class="visually-hidden">На основную страницу сайта круизов в Антарктику.</span>
-                <svg width="70" height="38">
-                  <use href="img/sprite_auto.svg#logo"></use>
-                </svg>
-              </a>
+          <div class="page-header__menu-wrapper">
+
+            <div class="page-header__logo-button-wrapper">
+              <div class="page-header__logo logo logo--header">
+                <a href="index.html">
+                  <span class="visually-hidden">На основную страницу сайта круизов в Антарктику.</span>
+                  <svg width="70" height="38">
+                    <use href="img/sprite_auto.svg#logo"></use>
+                  </svg>
+                </a>
+              </div>
+              <button class="page-header__menu-toggle page-header__menu-toggle--menu-opened menu-toggle" type="button">
+                <span class="visually-hidden">Открыть или закрыть меню.</span>
+                <div class="menu-toggle__icon menu-toggle__icon--burger">
+                  <svg width="24" height="12">
+                    <use href="img/sprite_auto.svg#menu-icon-burger"></use>
+                  </svg>
+                </div>
+                <div class="menu-toggle__icon menu-toggle__icon--cross">
+                  <svg width="13" height="13">
+                    <use href="img/sprite_auto.svg#menu-icon-cross"></use>
+                  </svg>
+                </div>
+              </button>
             </div>
 
-            <button class="page-header__menu-toggle menu-toggle" type="button">
-              <span class="visually-hidden">Открыть или закрыть меню.</span>
-              <div class="menu-toggle__icon menu-toggle__icon--burger">
-                <svg width="24" height="12">
-                  <use href="img/sprite_auto.svg#menu-icon-burger"></use>
-                </svg>
-              </div>
-              <div class="menu-toggle__icon menu-toggle__icon--cross">
-                <svg width="13" height="13">
-                  <use href="img/sprite_auto.svg#menu-icon-cross"></use>
-                </svg>
-              </div>
-            </button>
-
             <nav class="page-header__navigation">
-              <ul class="navigation navigation--nojs list-reset">
+              <ul class="navigation navigation--header list-reset">
                 <li class="navigation__item">
                   <a href="#advantages">
                     Преимущества

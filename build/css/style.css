@@ -1132,19 +1132,64 @@ button,
   margin-left: 6px;
 }
 
-.logo svg {
+.logo {
   fill: #f9fbfd;
   width: 70px;
   height: 38px;
 }
 
-.logo svg:hover,
-.logo svg:focus {
+.logo:hover,
+.logo:focus {
   fill: #718aac;
 }
 
-.logo svg:active {
+.logo:active {
   fill: #3c94c1;
+}
+
+.logo svg {
+  width: 70px;
+  height: 38px;
+}
+
+.menu-toggle {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+}
+
+.menu-toggle__icon {
+  height: 24px;
+  width: 24px;
+}
+
+.menu-toggle__icon--burger {
+  stroke: #f9fbfd;
+}
+
+.menu-toggle__icon--burger:hover,
+.menu-toggle__icon--burger:focus {
+  stroke: #718aac;
+}
+
+.menu-toggle__icon--burger:active {
+  stroke: #3c94c1;
+}
+
+.menu-toggle__icon--cross {
+  stroke: #011c40;
+}
+
+.menu-toggle__icon--cross:hover,
+.menu-toggle__icon--cross:focus {
+  stroke: #718aac;
+}
+
+.menu-toggle__icon--cross:active {
+  stroke: #3c94c1;
 }
 
 .navigation {
@@ -1221,7 +1266,7 @@ button,
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.page-header__navigation-wrapper {
+.page-header__menu-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1266,6 +1311,10 @@ button,
   background-color: #f9fbfd;
   min-width: 320px;
   width: 100%;
+}
+
+.page__body--scroll-off {
+  color: transparent;
 }
 
 .promo {
@@ -1444,6 +1493,11 @@ button,
     padding-left: 0;
   }
 
+  .logo {
+    width: 38px;
+    height: 20px;
+  }
+
   .logo svg {
     width: 38px;
     height: 20px;
@@ -1544,9 +1598,132 @@ button,
     padding: 0 15px;
   }
 
+  .logo {
+    width: 42px;
+    height: 22px;
+  }
+
   .logo svg {
     width: 42px;
     height: 22px;
+  }
+
+  .navigation {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+  }
+
+  .navigation--header a {
+    color: #011c40;
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .navigation__item {
+    padding-left: 0;
+  }
+
+  .page-header .page-header__navigation {
+    display: none;
+  }
+
+  .page-header--menu-opened {
+    color: transparent;
+  }
+
+  .page-header--menu-opened .page-header__menu-wrapper {
+    position: absolute;
+    display: block;
+    background-color: #f9fbfd;
+    margin: 0;
+    min-width: 285px;
+    width: calc(100vw - 35px);
+    height: 100vh;
+    right: 0;
+    z-index: 1;
+    padding: 20px 15px 0;
+  }
+
+  .page-header--menu-opened .logo--header {
+    fill: #011c40;
+  }
+
+  .page-header--menu-opened .logo--header:hover,
+  .page-header--menu-opened .logo--header:focus {
+    fill: #718aac;
+  }
+
+  .page-header--menu-opened .logo--header:active {
+    fill: #3c94c1;
+  }
+
+  .page-header--menu-opened .page-header__navigation {
+    display: block;
+  }
+
+  .page-header--nojs .page-header__navigation {
+    display: block;
+  }
+
+  .page-header--nojs .page-header__menu-toggle {
+    display: none;
+  }
+
+  .page-header__menu-wrapper {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+
+  .page-header__logo-button-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .page-header__menu-toggle {
+    display: block;
+  }
+
+  .page-header__menu-toggle--menu-closed .menu-toggle__icon--burger {
+    display: block;
+  }
+
+  .page-header__menu-toggle--menu-closed .menu-toggle__icon--cross {
+    display: none;
+  }
+
+  .page-header__menu-toggle--menu-opened .menu-toggle__icon--burger {
+    display: none;
+  }
+
+  .page-header__menu-toggle--menu-opened .menu-toggle__icon--cross {
+    display: block;
+  }
+
+  .page__body--scroll-off {
+    position: relative;
+    overflow-y: hidden;
+    height: 100vh;
+  }
+
+  .page__body--scroll-off::before {
+    content: "";
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 43, 102, 0.5);
+    z-index: 1;
   }
 }
 
