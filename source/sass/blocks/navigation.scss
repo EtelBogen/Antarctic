@@ -13,10 +13,17 @@
 
   &--header {
     @include vp-767 {
+      padding-left: 10px;
+      padding-bottom: 20px;
+
+      .navigation__item {
+        padding-bottom: 26px;
+      }
+
       a {
         color: $color-tangaroa;
         font-size: 18px;
-        line-height: 22px;
+        line-height: 21px;
       }
     }
   }

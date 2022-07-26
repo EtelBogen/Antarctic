@@ -27,6 +27,9 @@
 
 .menu-toggle__icon--cross {
   stroke: $color-tangaroa;
+  position: relative;
+  top: 5px;
+  left: 5px;
 
   &:hover,
   &:focus {

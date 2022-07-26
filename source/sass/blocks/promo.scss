@@ -31,7 +31,7 @@
   font-weight: 600;
   font-size: 28px;
   line-height: 42px;
-  margin:-4px 0 0;
+  margin: -4px 0 0;
 
   @include vp-1159 {
     font-size: 26px;
@@ -39,7 +39,7 @@
   }
 }
 
-.promo__info p{
+.promo__info p {
   font-size: 16px;
   margin: 0;
   padding: 24px 0 0;

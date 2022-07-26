@@ -1,6 +1,6 @@
 .booking-form {
   background-color: $color-tangaroa;
-  box-shadow: 0px 4px 45px $color-tangaroa-shadow;
+  box-shadow: 0 4px 45px $color-tangaroa-shadow;
   width: 403px;
   min-height: 455px;
   padding: 44px 50px 50px;
@@ -10,7 +10,7 @@
   }
 }
 
-.booking-form h3{
+.booking-form h3 {
   color: $color-alice-blue;
   font-weight: 500;
   font-size: 18px;
@@ -79,7 +79,7 @@
 .booking-form__agreement input + label::before {
   content: "";
   position: absolute;
-  left: 0px;
+  left: 0;
   top: -5px;
   background-image: url("/img/svg/icon-checkbox-off.svg");
   width: 18px;
@@ -97,7 +97,7 @@
 .booking-form__agreement input:checked + label::after {
   content: "";
   position: absolute;
-  left: 0px;
+  left: 0;
   top: -5px;
   background-image: url("/img/svg/icon-checkbox-on.svg");
   width: 18px;

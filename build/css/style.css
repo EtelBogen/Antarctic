@@ -698,8 +698,8 @@ button,
 
 .booking-form {
   background-color: #011c40;
-  -webkit-box-shadow: 0px 4px 45px rgba(1, 28, 64, 0.15);
-  box-shadow: 0px 4px 45px rgba(1, 28, 64, 0.15);
+  -webkit-box-shadow: 0 4px 45px rgba(1, 28, 64, 0.15);
+  box-shadow: 0 4px 45px rgba(1, 28, 64, 0.15);
   width: 403px;
   min-height: 455px;
   padding: 44px 50px 50px;
@@ -821,7 +821,7 @@ button,
 .booking-form__agreement input + label::before {
   content: "";
   position: absolute;
-  left: 0px;
+  left: 0;
   top: -5px;
   background-image: url("/img/svg/icon-checkbox-off.svg");
   width: 18px;
@@ -839,7 +839,7 @@ button,
 .booking-form__agreement input:checked + label::after {
   content: "";
   position: absolute;
-  left: 0px;
+  left: 0;
   top: -5px;
   background-image: url("/img/svg/icon-checkbox-on.svg");
   width: 18px;
@@ -983,8 +983,8 @@ button,
   display: none;
   min-height: 316px;
   padding: 0 25px;
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .catalog-card__side--back dl,
@@ -1027,7 +1027,6 @@ button,
   font-weight: 500;
   font-size: 18px;
   line-height: 27px;
-  margin: 0;
   margin: auto 30px 24px;
   padding: 0;
 }
@@ -1181,6 +1180,9 @@ button,
 
 .menu-toggle__icon--cross {
   stroke: #011c40;
+  position: relative;
+  top: 5px;
+  left: 5px;
 }
 
 .menu-toggle__icon--cross:hover,
@@ -1618,10 +1620,19 @@ button,
     align-items: flex-start;
   }
 
+  .navigation--header {
+    padding-left: 10px;
+    padding-bottom: 20px;
+  }
+
+  .navigation--header .navigation__item {
+    padding-bottom: 26px;
+  }
+
   .navigation--header a {
     color: #011c40;
     font-size: 18px;
-    line-height: 22px;
+    line-height: 21px;
   }
 
   .navigation__item {
@@ -1647,6 +1658,10 @@ button,
     right: 0;
     z-index: 1;
     padding: 20px 15px 0;
+  }
+
+  .page-header--menu-opened .page-header__logo-button-wrapper {
+    padding-bottom: 41px;
   }
 
   .page-header--menu-opened .logo--header {
@@ -1689,6 +1704,7 @@ button,
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+    width: 100%;
   }
 
   .page-header__menu-toggle {
