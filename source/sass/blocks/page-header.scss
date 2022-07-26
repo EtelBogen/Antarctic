@@ -26,6 +26,13 @@
     .page-header__navigation {
       display: none;
     }
+
+    min-height: 500px;
+    background-image: url("/img/jpg/header-background-mobile@1x.jpg");
+
+    @include retina {
+      background-image: url("/img/jpg/header-background-mobile@2x.jpg");
+    }
   }
 
   &--menu-opened {
@@ -152,6 +159,11 @@
     font-size: 50px;
     line-height: 61px;
   }
+
+  @include vp-767 {
+    font-size: 36px;
+    line-height: 45px;
+  }
 }
 
 .page-header__title p {
@@ -163,5 +175,10 @@
   @include vp-1159 {
     font-size: 18px;
     line-height: 22px;
+  }
+
+  @include vp-767 {
+    font-size: 16px;
+    line-height: 22.4px;
   }
 }

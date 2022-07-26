@@ -17,6 +17,15 @@
       background-image: url("/img/jpg/advantages-background-tablet@2x.jpg");
     }
   }
+
+  @include vp-767 {
+    min-height: 997px;
+    background-image: url(/img/jpg/advantages-background-mobile@1x.jpg);
+
+    @include retina {
+      background-image: url(/img/jpg/advantages-background-mobile@2x.jpg);
+    }
+  }
 }
 
 .advantages h2 {
@@ -26,6 +35,16 @@
   line-height: 42px;
   margin: 0;
   padding-bottom: 49px;
+
+  @include vp-767 {
+    font-size: 26px;
+    line-height: 39px;
+  }
+
+  @include vp-767 {
+    font-size: 24px;
+    line-height: 36px;
+  }
 }
 
 .advantages__list {
@@ -38,5 +57,15 @@
   @include vp-1159 {
     column-gap: 30px;
     row-gap: 30px;
+  }
+
+  @include vp-767 {
+    display: block;
+  }
+}
+
+.advantages__card {
+  @include vp-767 {
+    margin-bottom: 30px;
   }
 }

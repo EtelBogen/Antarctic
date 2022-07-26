@@ -8,6 +8,42 @@
     min-height: 310px;
     min-width: 206px;
   }
+
+  @include vp-767 {
+    min-height: 249px;
+    min-width: 290px;
+    padding: 25px 15px 25px 20px;
+  }
+}
+
+.advantages-card--ship svg {
+  width: 27px;
+  height: 32px;
+
+  @include vp-767 {
+    width: 21px;
+    height: 26px;
+  }
+}
+
+.advantages-card--allinclusive svg {
+  width: 38px;
+  height: 21px;
+
+  @include vp-767 {
+    width: 33px;
+    height: 19px;
+  }
+}
+
+.advantages-card--boat svg {
+  width: 27px;
+  height: 32px;
+
+  @include vp-767 {
+    width: 38px;
+    height: 13px;
+  }
 }
 
 .advantages-card__icon {

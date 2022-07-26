@@ -2,7 +2,7 @@
   color: $color-alice-blue;
   line-height: 19.6px;
   width: 260px;
-  min-height: 386px;
+  height: 386px;
 
   display: grid;
   grid-template-areas: "card-area";
@@ -11,9 +11,11 @@
     width: 309px;
   }
 
+  @include vp-767 {
+    width: 270px;
+  }
+
   &:hover {
-    display: flex;
-    flex-direction: column;
     background-color: $color-tangaroa;
   }
 
@@ -28,6 +30,7 @@
   &:hover .catalog-card__side--back {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
   }
 }
 
@@ -38,18 +41,23 @@
 
 .catalog-card picture,
 .catalog-card img {
+  width: 260px;
+  height: 386px;
   object-fit: cover;
 
   @include vp-1159 {
     width: 309px;
-    height: 386px;
+  }
+
+  @include vp-767 {
+    width: 270px;
   }
 }
 
 .catalog-card__side--back {
   display: none;
   min-height: 316px;
-  padding: 0 25px;
+  padding: 0 25px 35px;
   box-shadow: 0 4px 4px $color-black-transparent;
 
   @include vp-1159 {
@@ -64,7 +72,8 @@
 }
 
 .catalog-card__side--back dl {
-  padding-bottom: 12px;
+  margin-bottom: 13px;
+  overflow-y: auto;
 }
 
 .catalog-card__side--back dt {

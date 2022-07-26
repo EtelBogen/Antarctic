@@ -8,6 +8,10 @@
   @include vp-1159 {
     width: auto;
   }
+
+  @include vp-767 {
+    padding: 40px 30px;
+  }
 }
 
 .booking-form h3 {
@@ -17,6 +21,10 @@
   line-height: 27px;
   margin: 0;
   padding-bottom: 28px;
+
+  @include vp-767 {
+    line-height: 25px;
+  }
 }
 
 .booking-form input {
