@@ -25,6 +25,14 @@
 
   &:hover h3 {
     margin: 27px 30px 16px 25px;
+
+    @include vp-1159 {
+      margin-left: 34px;
+    }
+
+    @include vp-767 {
+      margin-left: 25px;
+    }
   }
 
   &:hover .catalog-card__side--back {
@@ -62,6 +70,13 @@
 
   @include vp-1159 {
     box-shadow: none;
+    padding-left: 34px;
+    padding-right: 35px;
+  }
+
+  @include vp-767 {
+    padding-left: 25px;
+    padding-right: 25px;
   }
 }
 

@@ -2,17 +2,24 @@
   min-height: 241px;
   background-color: $color-alice-blue;
   margin: 0;
-  padding: 30px 33px 26px 30px;
+  padding: 30px 33px 26px 31px;
 
   @include vp-1159 {
     min-height: 310px;
     min-width: 206px;
+    padding: 25px 18px 19px 20px;
   }
 
   @include vp-767 {
     min-height: 249px;
     min-width: 290px;
-    padding: 25px 15px 25px 20px;
+    padding: 25px 20px 20px 20px;
+  }
+}
+
+.advantages-card br {
+  @include vp-1159 {
+    display: none;
   }
 }
 
@@ -20,7 +27,7 @@
   width: 27px;
   height: 32px;
 
-  @include vp-767 {
+  @include vp-1159 {
     width: 21px;
     height: 26px;
   }
@@ -29,18 +36,20 @@
 .advantages-card--allinclusive svg {
   width: 38px;
   height: 21px;
+  margin-top: 4px;
 
-  @include vp-767 {
+  @include vp-1159 {
     width: 33px;
     height: 19px;
+    margin-top: 2px;
   }
 }
 
 .advantages-card--boat svg {
-  width: 27px;
-  height: 32px;
+  width: 42px;
+  height: 31px;
 
-  @include vp-767 {
+  @include vp-1159 {
     width: 38px;
     height: 13px;
   }
@@ -49,6 +58,10 @@
 .advantages-card__icon {
   min-height: 32px;
   margin-bottom: 18px;
+
+  @include vp-1159 {
+    min-height: 26px;
+  }
 }
 
 .advantages-card__icon svg {
@@ -60,10 +73,15 @@
   font-size: 18px;
   line-height: 27px;
   margin: 0;
-  padding-bottom: 10px;
+  padding-bottom: 9px;
+
+  @include vp-1159 {
+    line-height: 25.2px;
+    padding-bottom: 10px;
+  }
 }
 
 .advantages-card p {
-  line-height: 19.6px;
+  line-height: 20px;
   margin: 0;
 }

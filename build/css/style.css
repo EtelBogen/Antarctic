@@ -641,7 +641,7 @@ button,
   min-height: 241px;
   background-color: #f9fbfd;
   margin: 0;
-  padding: 30px 33px 26px 30px;
+  padding: 30px 33px 26px 31px;
 }
 
 .advantages-card--ship svg {
@@ -652,11 +652,12 @@ button,
 .advantages-card--allinclusive svg {
   width: 38px;
   height: 21px;
+  margin-top: 4px;
 }
 
 .advantages-card--boat svg {
-  width: 27px;
-  height: 32px;
+  width: 42px;
+  height: 31px;
 }
 
 .advantages-card__icon {
@@ -673,11 +674,11 @@ button,
   font-size: 18px;
   line-height: 27px;
   margin: 0;
-  padding-bottom: 10px;
+  padding-bottom: 9px;
 }
 
 .advantages-card p {
-  line-height: 19.6px;
+  line-height: 20px;
   margin: 0;
 }
 
@@ -732,7 +733,7 @@ button,
 .booking-form input {
   width: 100%;
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 21px;
   padding: 12px 16px;
   color: #011c40;
   border: none;
@@ -805,7 +806,8 @@ button,
 }
 
 .booking-form__agreement {
-  margin-bottom: 25px;
+  margin-bottom: 28px;
+  margin-top: -5px;
 }
 
 .booking-form__agreement input {
@@ -831,18 +833,24 @@ button,
 .booking-form__agreement input + label {
   position: relative;
   padding-left: 24px;
+  display: inline-block;
 }
 
-.booking-form__agreement input + label::before {
+.booking-form__agreement input + label::before,
+.booking-form__agreement input:checked + label::after {
   content: "";
   position: absolute;
   left: 0;
-  top: -5px;
-  background-image: url("/img/svg/icon-checkbox-off.svg");
+  top: -2px;
+  background-size: cover;
+  background-repeat: no-repeat;
   width: 18px;
   height: 18px;
-  background-repeat: no-repeat;
   cursor: pointer;
+}
+
+.booking-form__agreement input + label::before {
+  background-image: url("/img/svg/icon-checkbox-off.svg");
 }
 
 .booking-form__agreement input:focus + label::before,
@@ -852,15 +860,7 @@ button,
 }
 
 .booking-form__agreement input:checked + label::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: -5px;
   background-image: url("/img/svg/icon-checkbox-on.svg");
-  width: 18px;
-  height: 18px;
-  background-repeat: no-repeat;
-  cursor: pointer;
 }
 
 .booking-form__button {
@@ -907,7 +907,7 @@ button,
   font-size: 18px;
   line-height: 27px;
   margin: 0;
-  margin-top: 10px;
+  margin-top: 7px;
 }
 
 .booking__form {
@@ -1108,21 +1108,22 @@ button,
 }
 
 .contacts__info {
-  -ms-flex-item-align: center;
-  -ms-grid-row-align: center;
-  align-self: center;
+  -ms-flex-item-align: baseline;
+  align-self: baseline;
+  padding-top: 72px;
   padding-left: 60px;
   font-size: 16px;
 }
 
 .contacts__slogan {
-  margin: 10px 0 33px;
+  margin: 0;
+  margin-bottom: 30px;
 }
 
 .contacts__slogan p {
   font-weight: 500;
   font-size: 18px;
-  line-height: 27px;
+  line-height: 29px;
   margin: 0;
 }
 
@@ -1131,12 +1132,15 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 0 0 20px;
+  margin: 0;
+  margin-bottom: 21px;
 }
 
 .contacts__address svg,
 .contacts__phone svg {
-  vertical-align: middle;
+  display: inline-block;
+  height: 24px;
+  min-width: 18px;
 }
 
 .contacts__address p,
@@ -1145,7 +1149,7 @@ button,
   font-size: 16px;
   line-height: 24px;
   margin: 0;
-  margin-left: 6px;
+  margin-left: 10px;
 }
 
 .logo {
@@ -1184,6 +1188,7 @@ button,
 
 .menu-toggle__icon--burger {
   stroke: #f9fbfd;
+  padding-top: 4px;
 }
 
 .menu-toggle__icon--burger:hover,
@@ -1227,7 +1232,6 @@ button,
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  padding-bottom: 6px;
 }
 
 .navigation--footer {
@@ -1274,8 +1278,8 @@ button,
   padding-bottom: 50px;
 }
 
-.page-footer__socials {
-  margin-left: 34px;
+.page-footer__navigation {
+  margin-right: 30px;
 }
 
 .page-header {
@@ -1312,8 +1316,9 @@ button,
 }
 
 .page-header__title {
-  padding-top: 190px;
+  padding-top: 197px;
   padding-left: 95px;
+  padding-bottom: 250px;
 }
 
 .page-header__title h1 {
@@ -1413,7 +1418,7 @@ button,
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding-top: 7px;
+  padding-top: 11px;
   min-width: 106px;
 }
 
@@ -1428,6 +1433,21 @@ button,
 
 .socials__item svg:active {
   fill: #3c94c1;
+}
+
+.socials__item--facebook svg {
+  height: 20px;
+  width: 11px;
+}
+
+.socials__item--instagram svg {
+  height: 20px;
+  width: 19.5px;
+}
+
+.socials__item--twitter svg {
+  height: 16.25px;
+  width: 19.5px;
 }
 
 /* @media (hover: hover), screen and (min-width: 0\0) {
@@ -1445,11 +1465,46 @@ button,
   .advantages-card {
     min-height: 310px;
     min-width: 206px;
+    padding: 25px 18px 19px 20px;
+  }
+
+  .advantages-card br {
+    display: none;
+  }
+
+  .advantages-card--ship svg {
+    width: 21px;
+    height: 26px;
+  }
+
+  .advantages-card--allinclusive svg {
+    width: 33px;
+    height: 19px;
+    margin-top: 2px;
+  }
+
+  .advantages-card--boat svg {
+    width: 38px;
+    height: 13px;
+  }
+
+  .advantages-card__icon {
+    min-height: 26px;
+  }
+
+  .advantages-card h3 {
+    line-height: 25.2px;
+    padding-bottom: 10px;
   }
 
   .advantages {
     min-height: 588px;
     background-image: url("/img/jpg/advantages-background-tablet@1x.jpg");
+  }
+
+  .advantages h2 {
+    font-size: 26px;
+    line-height: 39px;
   }
 
   .advantages__list {
@@ -1474,7 +1529,7 @@ button,
 
   .booking__description {
     padding-left: 0;
-    padding-bottom: 60px;
+    padding-bottom: 54px;
     text-align: center;
   }
 
@@ -1482,6 +1537,7 @@ button,
     font-size: 34px;
     line-height: 51px;
     margin-top: 0;
+    padding-bottom: 3px;
   }
 
   .booking p {
@@ -1496,6 +1552,10 @@ button,
     width: 309px;
   }
 
+  .catalog-card:hover h3 {
+    margin-left: 34px;
+  }
+
   .catalog-card picture,
   .catalog-card img {
     width: 309px;
@@ -1504,6 +1564,18 @@ button,
   .catalog-card__side--back {
     -webkit-box-shadow: none;
     box-shadow: none;
+    padding-left: 34px;
+    padding-right: 35px;
+  }
+
+  .catalog h2 {
+    font-size: 26px;
+    line-height: 39px;
+  }
+
+  .catalog h3 {
+    margin-left: 35px;
+    margin-bottom: 28px;
   }
 
   .catalog__list {
@@ -1517,6 +1589,12 @@ button,
     min-height: 535px;
   }
 
+  .contacts__wrapper {
+    -webkit-column-gap: 30px;
+    -moz-column-gap: 30px;
+    column-gap: 30px;
+  }
+
   .contacts__map iframe,
   .contacts__map img {
     min-width: 324px;
@@ -1524,7 +1602,26 @@ button,
   }
 
   .contacts__info {
+    padding-top: 64px;
     padding-left: 0;
+  }
+
+  .contacts__slogan p {
+    line-height: 27px;
+  }
+
+  .contacts__address,
+  .contacts__phone {
+    margin-bottom: 22px;
+  }
+
+  .contacts__address svg {
+    margin-top: 3px;
+  }
+
+  .contacts__address p,
+  .contacts__phone a {
+    margin-top: -2px;
   }
 
   .logo {
@@ -1537,8 +1634,12 @@ button,
     height: 20px;
   }
 
+  .navigation--footer {
+    padding-left: 0;
+  }
+
   .navigation__item {
-    padding-left: 23px;
+    padding-left: 24px;
   }
 
   .navigation a {
@@ -1555,8 +1656,8 @@ button,
     min-height: 120px;
     -ms-grid-columns: 38px 1fr 87px;
     grid-template-columns: 38px 1fr 87px;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 40px;
+    padding-bottom: 42px;
   }
 
   .page-header {
@@ -1566,8 +1667,13 @@ button,
     box-shadow: none;
   }
 
+  .page-header__menu-wrapper {
+    padding-top: 28px;
+  }
+
   .page-header__title {
     padding-left: 0;
+    padding-top: 218px;
   }
 
   .page-header__title h1 {
@@ -1578,6 +1684,7 @@ button,
   .page-header__title p {
     font-size: 18px;
     line-height: 22px;
+    padding-top: 10px;
   }
 
   .promo {
@@ -1597,10 +1704,11 @@ button,
   .promo__info h2 {
     font-size: 26px;
     line-height: 36.4px;
+    margin-top: -9px;
   }
 
   .promo__info p {
-    padding-top: 10px;
+    padding-top: 15px;
   }
 
   .promo__picture img,
@@ -1612,6 +1720,43 @@ button,
   .section {
     padding-top: 100px;
     padding-bottom: 100px;
+  }
+
+  .section--promo {
+    padding-bottom: 94px;
+  }
+
+  .section--advantages,
+  .section--catalog {
+    padding-top: 89px;
+  }
+
+  .section--booking {
+    padding-top: 87px;
+  }
+
+  .section--contacts {
+    padding-bottom: 92px;
+  }
+
+  .socials {
+    min-width: 87px;
+    padding-top: 8px;
+  }
+
+  .socials__item--facebook svg {
+    height: 16px;
+    width: 9px;
+  }
+
+  .socials__item--instagram svg {
+    height: 16px;
+    width: 16px;
+  }
+
+  .socials__item--twitter svg {
+    height: 13px;
+    width: 16px;
   }
 }
 
@@ -1637,22 +1782,7 @@ button,
   .advantages-card {
     min-height: 249px;
     min-width: 290px;
-    padding: 25px 15px 25px 20px;
-  }
-
-  .advantages-card--ship svg {
-    width: 21px;
-    height: 26px;
-  }
-
-  .advantages-card--allinclusive svg {
-    width: 33px;
-    height: 19px;
-  }
-
-  .advantages-card--boat svg {
-    width: 38px;
-    height: 13px;
+    padding: 25px 20px 20px 20px;
   }
 
   .advantages {
@@ -1661,13 +1791,9 @@ button,
   }
 
   .advantages h2 {
-    font-size: 26px;
-    line-height: 39px;
-  }
-
-  .advantages h2 {
     font-size: 24px;
     line-height: 36px;
+    padding-bottom: 30px;
   }
 
   .advantages__list {
@@ -1675,15 +1801,36 @@ button,
   }
 
   .advantages__card {
-    margin-bottom: 30px;
+    margin-bottom: 31px;
   }
 
   .booking-form {
-    padding: 40px 30px;
+    padding: 35px 30px 40px;
   }
 
   .booking-form h3 {
     line-height: 25px;
+    text-align: center;
+  }
+
+  .booking-form__agreement {
+    margin-top: 0;
+    margin-bottom: 21px;
+  }
+
+  .booking-form__agreement label {
+    line-height: 12px;
+  }
+
+  .booking-form__agreement input + label {
+    padding-left: 28px;
+  }
+
+  .booking-form__agreement input + label::before,
+  .booking-form__agreement input:checked + label::after {
+    top: 0;
+    width: 20px;
+    height: 20px;
   }
 
   .booking {
@@ -1692,17 +1839,23 @@ button,
   }
 
   .booking__description {
-    padding-bottom: 40px;
+    padding-bottom: 33px;
   }
 
   .booking h2 {
-    font-size: 34px;
-    line-height: 51px;
+    font-size: 24px;
+    line-height: 31.2px;
+    padding-bottom: 14px;
   }
 
   .booking p {
     font-size: 16px;
     line-height: 22.4px;
+    margin: 0 10px;
+  }
+
+  .booking__description br {
+    display: none;
   }
 
   .booking__form {
@@ -1713,19 +1866,29 @@ button,
     width: 270px;
   }
 
+  .catalog-card:hover h3 {
+    margin-left: 25px;
+  }
+
   .catalog-card picture,
   .catalog-card img {
     width: 270px;
   }
 
-  .catalog h2 {
-    font-size: 26px;
-    line-height: 39px;
+  .catalog-card__side--back {
+    padding-left: 25px;
+    padding-right: 25px;
   }
 
   .catalog h2 {
     font-size: 24px;
     line-height: 36px;
+    padding-bottom: 31px;
+  }
+
+  .catalog h3 {
+    margin-left: 25px;
+    margin-bottom: 18px;
   }
 
   .catalog__list {
@@ -1754,6 +1917,14 @@ button,
   .contacts__map img {
     min-width: 290px;
     height: 316px;
+  }
+
+  .contacts__info {
+    padding-top: 0;
+  }
+
+  .contacts__phone {
+    margin-bottom: 4px;
   }
 
   .logo {
@@ -1791,12 +1962,12 @@ button,
     line-height: 21px;
   }
 
-  .navigation--footer {
+  .navigation__item {
     padding-left: 0;
   }
 
-  .navigation__item {
-    padding-left: 0;
+  .navigation__item--footer {
+    margin-bottom: 8px;
   }
 
   .page-footer__wrapper {
@@ -1811,11 +1982,11 @@ button,
     -ms-flex-align: start;
     align-items: start;
     padding-top: 40px;
-    padding-bottom: 40px;
+    padding-bottom: 33px;
   }
 
-  .page-footer__socials {
-    margin-left: 0;
+  .page-footer__logo {
+    margin-bottom: 22px;
   }
 
   .page-header {
@@ -1827,11 +1998,13 @@ button,
     display: none;
   }
 
-  .page-header--menu-opened {
+  .page-header--menu-opened,
+  .page-header--nojs {
     color: transparent;
   }
 
-  .page-header--menu-opened .page-header__menu-wrapper {
+  .page-header--menu-opened .page-header__menu-wrapper,
+  .page-header--nojs .page-header__menu-wrapper {
     position: absolute;
     display: block;
     background-color: #f9fbfd;
@@ -1844,36 +2017,55 @@ button,
     padding: 20px 15px 0;
   }
 
-  .page-header--menu-opened .page-header__logo-button-wrapper {
+  .page-header--menu-opened .page-header__logo-button-wrapper,
+  .page-header--nojs .page-header__logo-button-wrapper {
     padding-bottom: 41px;
   }
 
-  .page-header--menu-opened .logo--header {
+  .page-header--menu-opened .logo--header,
+  .page-header--nojs .logo--header {
     fill: #011c40;
   }
 
   .page-header--menu-opened .logo--header:hover,
-  .page-header--menu-opened .logo--header:focus {
+  .page-header--menu-opened .logo--header:focus,
+  .page-header--nojs .logo--header:hover,
+  .page-header--nojs .logo--header:focus {
     fill: #718aac;
   }
 
-  .page-header--menu-opened .logo--header:active {
+  .page-header--menu-opened .logo--header:active,
+  .page-header--nojs .logo--header:active {
     fill: #3c94c1;
   }
 
-  .page-header--menu-opened .page-header__navigation {
+  .page-header--menu-opened .page-header__navigation,
+  .page-header--nojs .page-header__navigation {
     display: block;
   }
 
-  .page-header--nojs .page-header__navigation {
-    display: block;
+  .page-header--nojs {
+    color: #f9fbfd;
+  }
+
+  .page-header--nojs .page-header__menu-wrapper {
+    width: 100vw;
+    height: auto;
+    min-height: 300px;
+    position: relative;
   }
 
   .page-header--nojs .page-header__menu-toggle {
     display: none;
   }
 
+  .page-header--nojs .page-header__title {
+    padding-top: 133px;
+    padding-bottom: 244px;
+  }
+
   .page-header__menu-wrapper {
+    padding-top: 19px;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
   }
@@ -1911,6 +2103,11 @@ button,
     display: block;
   }
 
+  .page-header__title {
+    padding-top: 133px;
+    padding-bottom: 150px;
+  }
+
   .page-header__title h1 {
     font-size: 36px;
     line-height: 45px;
@@ -1941,7 +2138,7 @@ button,
   }
 
   .promo__info {
-    padding-bottom: 40px;
+    padding-bottom: 33px;
   }
 
   .promo__info h2 {
@@ -1950,7 +2147,7 @@ button,
   }
 
   .promo__info p {
-    padding-top: 8px;
+    padding-top: 17px;
   }
 
   .promo__picture img,
@@ -1959,8 +2156,32 @@ button,
     min-height: 186px;
   }
 
+  .section {
+    padding-top: 65px;
+    padding-bottom: 65px;
+  }
+
+  .section--advantages,
+  .section--catalog {
+    padding-top: 56px;
+  }
+
+  .section--advantages {
+    padding-bottom: 33px;
+  }
+
+  .section--booking {
+    padding-top: 58px;
+  }
+
+  .section--contacts {
+    padding-top: 57px;
+    padding-bottom: 59px;
+  }
+
   .socials {
-    min-width: 100px;
+    min-width: 87px;
+    padding-top: 13px;
   }
 }
 

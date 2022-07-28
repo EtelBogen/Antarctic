@@ -10,7 +10,7 @@
   }
 
   @include vp-767 {
-    padding: 40px 30px;
+    padding: 35px 30px 40px;
   }
 }
 
@@ -24,13 +24,14 @@
 
   @include vp-767 {
     line-height: 25px;
+    text-align: center;
   }
 }
 
 .booking-form input {
   width: 100%;
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 21px;
   padding: 12px 16px;
   color: $color-tangaroa;
   border: none;
@@ -57,7 +58,13 @@
 }
 
 .booking-form__agreement {
-  margin-bottom: 25px;
+  margin-bottom: 28px;
+  margin-top: -5px;
+
+  @include vp-767 {
+    margin-top: 0;
+    margin-bottom: 21px;
+  }
 }
 
 .booking-form__agreement input {
@@ -77,23 +84,43 @@
   color: $color-alice-blue;
   font-size: 10px;
   line-height: 13px;
+
+  @include vp-767 {
+    line-height: 12px;
+  }
 }
 
 .booking-form__agreement input + label {
   position: relative;
   padding-left: 24px;
+  display: inline-block;
+
+  @include vp-767 {
+    padding-left: 28px;
+  }
 }
 
-.booking-form__agreement input + label::before {
+.booking-form__agreement input + label::before,
+.booking-form__agreement input:checked + label::after {
   content: "";
   position: absolute;
   left: 0;
-  top: -5px;
-  background-image: url("/img/svg/icon-checkbox-off.svg");
+  top: -2px;
+  background-size: cover;
+  background-repeat: no-repeat;
   width: 18px;
   height: 18px;
-  background-repeat: no-repeat;
   cursor: pointer;
+
+  @include vp-767 {
+    top: 0;
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.booking-form__agreement input + label::before {
+  background-image: url("/img/svg/icon-checkbox-off.svg");
 }
 
 .booking-form__agreement input:focus + label::before,
@@ -103,15 +130,7 @@
 }
 
 .booking-form__agreement input:checked + label::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: -5px;
   background-image: url("/img/svg/icon-checkbox-on.svg");
-  width: 18px;
-  height: 18px;
-  background-repeat: no-repeat;
-  cursor: pointer;
 }
 
 .booking-form__button {

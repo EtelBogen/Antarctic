@@ -2,11 +2,17 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 7px;
+  padding-top: 11px;
   min-width: 106px;
 
+  @include vp-1159 {
+    min-width: 87px;
+    padding-top: 8px;
+  }
+
   @include vp-767 {
-    min-width: 100px;
+    min-width: 87px;
+    padding-top: 13px;
   }
 }
 
@@ -20,5 +26,35 @@
 
   &:active {
     fill: $color-curiosus-blue;
+  }
+}
+
+.socials__item--facebook svg {
+  height: 20px;
+  width: 11px;
+
+  @include vp-1159 {
+    height: 16px;
+    width: 9px;
+  }
+}
+
+.socials__item--instagram svg {
+  height: 20px;
+  width: 19.5px;
+
+  @include vp-1159 {
+    height: 16px;
+    width: 16px;
+  }
+}
+
+.socials__item--twitter svg {
+  height: 16.25px;
+  width: 19.5px;
+
+  @include vp-1159 {
+    height: 13px;
+    width: 16px;
   }
 }

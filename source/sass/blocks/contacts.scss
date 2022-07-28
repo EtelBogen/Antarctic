@@ -17,6 +17,10 @@
   column-gap: 40px;
   row-gap: 30px;
 
+  @include vp-1159 {
+    column-gap: 30px;
+  }
+
   @include vp-767 {
     display: flex;
     flex-direction: column-reverse;
@@ -60,35 +64,65 @@
 }
 
 .contacts__info {
-  align-self: center;
+  align-self: baseline;
+  padding-top: 72px;
   padding-left: 60px;
   font-size: 16px;
 
   @include vp-1159 {
+    padding-top: 64px;
     padding-left: 0;
+  }
+
+  @include vp-767 {
+    padding-top: 0;
   }
 }
 
 .contacts__slogan {
-  margin: 10px 0 33px;
+  margin: 0;
+  margin-bottom: 30px;
 }
 
 .contacts__slogan p {
   font-weight: 500;
   font-size: 18px;
-  line-height: 27px;
+  line-height: 29px;
   margin: 0;
+
+  @include vp-1159 {
+    line-height: 27px;
+  }
 }
 
 .contacts__address,
 .contacts__phone {
   display: flex;
-  margin: 0 0 20px;
+  margin: 0;
+  margin-bottom: 21px;
+
+  @include vp-1159 {
+    margin-bottom: 22px;
+  }
+}
+
+.contacts__phone {
+  @include vp-767 {
+    margin-bottom: 4px;
+  }
 }
 
 .contacts__address svg,
 .contacts__phone svg {
-  vertical-align: middle;
+  display: inline-block;
+  height: 24px;
+  min-width: 18px;
+}
+
+.contacts__address svg {
+  @include vp-1159 {
+    margin-top: 3px;
+  }
 }
 
 .contacts__address p,
@@ -97,5 +131,10 @@
   font-size: 16px;
   line-height: 24px;
   margin: 0;
-  margin-left: 6px;
+  margin-left: 10px;
+
+  @include vp-1159 {
+    margin-top: -2px;
+  }
 }
+

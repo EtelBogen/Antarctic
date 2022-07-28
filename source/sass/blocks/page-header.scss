@@ -35,7 +35,8 @@
     }
   }
 
-  &--menu-opened {
+  &--menu-opened,
+  &--nojs {
     @include vp-767 {
       color: transparent;
 
@@ -77,12 +78,22 @@
 
   &--nojs {
     @include vp-767 {
-      .page-header__navigation {
-        display: block;
+      color: $color-alice-blue;
+
+      .page-header__menu-wrapper {
+        width: 100vw;
+        height: auto;
+        min-height: 300px;
+        position: relative;
       }
 
       .page-header__menu-toggle {
         display: none;
+      }
+
+      .page-header__title {
+        padding-top: 133px;
+        padding-bottom: 244px;
       }
     }
   }
@@ -95,7 +106,12 @@
   align-items: center;
   padding-top: 35px;
 
+  @include vp-1159 {
+    padding-top: 28px;
+  }
+
   @include vp-767 {
+    padding-top: 19px;
     flex-wrap: wrap;
   }
 }
@@ -142,11 +158,18 @@
 }
 
 .page-header__title {
-  padding-top: 190px;
+  padding-top: 197px;
   padding-left: 95px;
+  padding-bottom: 250px;
 
   @include vp-1159 {
     padding-left: 0;
+    padding-top: 218px;
+  }
+
+  @include vp-767 {
+    padding-top: 133px;
+    padding-bottom: 150px;
   }
 }
 
@@ -175,6 +198,7 @@
   @include vp-1159 {
     font-size: 18px;
     line-height: 22px;
+    padding-top: 10px;
   }
 
   @include vp-767 {
