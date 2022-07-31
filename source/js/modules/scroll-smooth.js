@@ -12,6 +12,6 @@ const addScrollSmooth = () => {
       });
     });
   });
-}
+};
 
 export {addScrollSmooth};

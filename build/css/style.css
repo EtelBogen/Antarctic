@@ -834,6 +834,7 @@ button,
   position: relative;
   padding-left: 24px;
   display: inline-block;
+  vertical-align: baseline;
 }
 
 .booking-form__agreement input + label::before,
@@ -1138,14 +1139,14 @@ button,
 
 .contacts__address svg,
 .contacts__phone svg {
-  display: inline-block;
+  display: block;
   height: 24px;
   min-width: 18px;
 }
 
 .contacts__address p,
 .contacts__phone a {
-  display: inline-block;
+  display: block;
   font-size: 16px;
   line-height: 24px;
   margin: 0;
@@ -1182,13 +1183,12 @@ button,
 }
 
 .menu-toggle__icon {
-  height: 24px;
   width: 24px;
+  height: 24px;
 }
 
 .menu-toggle__icon--burger {
   stroke: #f9fbfd;
-  padding-top: 4px;
 }
 
 .menu-toggle__icon--burger:hover,
@@ -1201,10 +1201,12 @@ button,
 }
 
 .menu-toggle__icon--cross {
+  width: 15px;
+  height: 15px;
   stroke: #011c40;
   position: relative;
-  top: 5px;
-  left: 5px;
+  top: -1px;
+  left: 10px;
 }
 
 .menu-toggle__icon--cross:hover,
@@ -1787,7 +1789,7 @@ button,
 
   .advantages {
     min-height: 997px;
-    background-image: url(/img/jpg/advantages-background-mobile@1x.jpg);
+    background-image: url("/img/jpg/advantages-background-mobile@1x.jpg");
   }
 
   .advantages h2 {
@@ -2187,7 +2189,7 @@ button,
 
 @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (-o-min-device-pixel-ratio: 3/2), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
   .advantages {
-    background-image: url(/img/jpg/advantages-background-mobile@2x.jpg);
+    background-image: url("/img/jpg/advantages-background-mobile@2x.jpg");
   }
 
   .booking {

@@ -114,7 +114,7 @@
 
 .contacts__address svg,
 .contacts__phone svg {
-  display: inline-block;
+  display: block;
   height: 24px;
   min-width: 18px;
 }
@@ -127,7 +127,7 @@
 
 .contacts__address p,
 .contacts__phone a {
-  display: inline-block;
+  display: block;
   font-size: 16px;
   line-height: 24px;
   margin: 0;
@@ -137,4 +137,3 @@
     margin-top: -2px;
   }
 }
-

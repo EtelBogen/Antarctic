@@ -94,6 +94,7 @@
   position: relative;
   padding-left: 24px;
   display: inline-block;
+  vertical-align: baseline;
 
   @include vp-767 {
     padding-left: 28px;
