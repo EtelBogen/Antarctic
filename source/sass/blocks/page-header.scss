@@ -130,17 +130,13 @@
 
   @include vp-767 {
     display: block;
-  }
 
-  &--menu-closed {
-    @include vp-767 {
-      .menu-toggle__icon--burger {
-        display: block;
-      }
+    .menu-toggle__icon--burger {
+      display: block;
+    }
 
-      .menu-toggle__icon--cross {
-        display: none;
-      }
+    .menu-toggle__icon--cross {
+      display: none;
     }
   }
 
