@@ -121,7 +121,7 @@
 }
 
 .booking-form__agreement input + label::before {
-  background-image: url("/img/svg/icon-checkbox-off.svg");
+  background-image: url("../img/svg/icon-checkbox-off.svg");
 }
 
 .booking-form__agreement input:focus + label::before,
@@ -131,7 +131,7 @@
 }
 
 .booking-form__agreement input:checked + label::after {
-  background-image: url("/img/svg/icon-checkbox-on.svg");
+  background-image: url("../img/svg/icon-checkbox-on.svg");
 }
 
 .booking-form__button {
