@@ -19,12 +19,11 @@
 }
 
 .catalog h3 {
-  grid-area: card-area;
-  z-index: 1;
   font-weight: 500;
   font-size: 18px;
   line-height: 27px;
-  margin: auto 30px 24px;
+  margin-left: 30px;
+  margin-bottom: 23px;
   padding: 0;
 
   @include vp-1159 {
@@ -42,8 +41,8 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  column-gap: 30px;
-  row-gap: 30px;
+  gap: 30px;
+  list-style-type: none;
   padding: 0 15px;
 
   @include vp-1159 {
