@@ -395,22 +395,22 @@
               </p>
             </div>
             <div class="booking__form booking-form">
-              <form name="booking-form" action="https://echo.htmlacademy.ru/" method="post">
+              <form id="bookingForm" name="booking-form" action="https://echo.htmlacademy.ru/" method="post">
                 <h3>
                   Оставьте заявку и&nbsp;мы&nbsp;свяжемся с вами в&nbsp;ближайшее время
                 </h3>
-                <label class="visually-hidden" for="tourist-name">Введите Ваше имя</label>
-                <input type="text" id="tourist-name" name="tourist-name" placeholder="Имя" required>
+                <label class="visually-hidden" for="touristName">Введите Ваше имя</label>
+                <input type="text" id="touristName" name="name" placeholder="Имя" required>
 
-                <label class="visually-hidden" for="tourist-phone">Введите Ваш номер телефона</label>
-                <input type="tel" id="tourist-phone" name="tourist-phone" placeholder="Телефон" required pattern="([+]|[0-9])+[0-9]">
+                <label class="visually-hidden" for="touristPhone">Введите Ваш номер телефона</label>
+                <input type="tel" id="touristPhone" name="phone" placeholder="Телефон" required pattern="([+]|[0-9])+[0-9]">
 
-                <label class="visually-hidden" for="tourist-email">Введите Вашу электронную почту</label>
-                <input type="email" id="tourist-email" name="tourist-email" placeholder="Email" required>
+                <label class="visually-hidden" for="touristEmail">Введите Вашу электронную почту</label>
+                <input type="email" id="touristEmail" name="email" placeholder="Email" required>
 
                 <div class="booking-form__agreement">
-                  <input type="checkbox" id="tourist-agreement" name="tourist-agreement" checked required>
-                  <label for="tourist-agreement">Я согласен на обработку моих&nbsp;персональных данных</label>
+                  <input type="checkbox" id="touristAgreement" name="agreement" checked required>
+                  <label for="touristAgreemen">Я согласен на обработку моих&nbsp;персональных данных</label>
                 </div>
                 <button class="booking-form__button button" type="submit" value="Оставить заявку">Оставить заявку</button>
               </form>

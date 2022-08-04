@@ -1,6 +1,7 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {openMainMenu} from './modules/menu';
 import {addScrollSmooth} from './modules/scroll-smooth';
+import {saveFormInStorage} from './modules/form';
 import './utils/utils';
 
 // ---------------------------------
@@ -14,11 +15,12 @@ window.addEventListener('DOMContentLoaded', () => {
 
   // Modules
   // ---------------------------------
-  openMainMenu();
   addScrollSmooth();
+  saveFormInStorage();
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана
   window.addEventListener('load', () => {
+    openMainMenu();
   });
 });
 
