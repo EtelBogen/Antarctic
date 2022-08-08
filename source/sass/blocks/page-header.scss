@@ -51,23 +51,15 @@
         right: 0;
         z-index: 1;
         padding: 20px 15px 0;
+        overflow: auto;
       }
 
       .page-header__logo-button-wrapper {
         padding-bottom: 41px;
       }
 
-      .logo--header {
+      .logo--header svg {
         fill: $color-tangaroa;
-
-        &:hover,
-        &:focus {
-          fill: $color-ship-cove;
-        }
-
-        &:active {
-          fill: $color-curiosus-blue;
-        }
       }
 
       .page-header__navigation {

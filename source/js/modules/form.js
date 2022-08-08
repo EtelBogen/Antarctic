@@ -10,7 +10,7 @@ const saveFormInStorage = () => {
 
     const json = JSON.stringify(object);
     localStorage.setItem('form[' + formName + ']', json);
-  }
+  };
 
   const synchronizeForm = (formName) => { // обновление данных
     const form = document.getElementById(formName);
@@ -18,9 +18,9 @@ const saveFormInStorage = () => {
     form.addEventListener('submit', (evt) => {
       saveForm(evt.target);
     });
-  }
+  };
 
   synchronizeForm('bookingForm');
-}
+};
 
 export {saveFormInStorage};

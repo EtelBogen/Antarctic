@@ -737,6 +737,7 @@ button,
   padding: 12px 16px;
   color: #011c40;
   border: none;
+  line-height: 1;
 }
 
 .booking-form input::-webkit-input-placeholder {
@@ -1169,22 +1170,8 @@ button,
   margin-left: 10px;
 }
 
-.logo {
-  fill: #f9fbfd;
-  width: 70px;
-  height: 38px;
-}
-
-.logo:hover,
-.logo:focus {
-  fill: #718aac;
-}
-
-.logo:active {
-  fill: #3c94c1;
-}
-
 .logo svg {
+  fill: #f9fbfd;
   width: 70px;
   height: 38px;
 }
@@ -1642,11 +1629,6 @@ button,
     margin-top: -2px;
   }
 
-  .logo {
-    width: 38px;
-    height: 20px;
-  }
-
   .logo svg {
     width: 38px;
     height: 20px;
@@ -1945,11 +1927,6 @@ button,
     margin-bottom: 4px;
   }
 
-  .logo {
-    width: 42px;
-    height: 22px;
-  }
-
   .logo svg {
     width: 42px;
     height: 22px;
@@ -2033,6 +2010,7 @@ button,
     right: 0;
     z-index: 1;
     padding: 20px 15px 0;
+    overflow: auto;
   }
 
   .page-header--menu-opened .page-header__logo-button-wrapper,
@@ -2040,21 +2018,9 @@ button,
     padding-bottom: 41px;
   }
 
-  .page-header--menu-opened .logo--header,
-  .page-header--nojs .logo--header {
+  .page-header--menu-opened .logo--header svg,
+  .page-header--nojs .logo--header svg {
     fill: #011c40;
-  }
-
-  .page-header--menu-opened .logo--header:hover,
-  .page-header--menu-opened .logo--header:focus,
-  .page-header--nojs .logo--header:hover,
-  .page-header--nojs .logo--header:focus {
-    fill: #718aac;
-  }
-
-  .page-header--menu-opened .logo--header:active,
-  .page-header--nojs .logo--header:active {
-    fill: #3c94c1;
   }
 
   .page-header--menu-opened .page-header__navigation,
