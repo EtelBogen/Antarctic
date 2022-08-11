@@ -9,7 +9,7 @@
     background-image: url("../img/jpg/booking-background-desktop@2x.jpg");
   }
 
-  @include vp-1159 {
+  @include vp-1023 {
     min-height: 805px;
     background-image: url("../img/jpg/booking-background-tablet@1x.jpg");
 
@@ -35,7 +35,7 @@
   column-gap: 40px;
   row-gap: 30px;
 
-  @include vp-1159 {
+  @include vp-1023 {
     display: block;
   }
 }
@@ -45,9 +45,9 @@
   align-self: center;
   padding-left: 60px;
 
-  @include vp-1159 {
+  @include vp-1023 {
     padding-left: 0;
-    padding-bottom: 54px;
+    padding-bottom: 52px;
     text-align: center;
   }
 
@@ -63,11 +63,11 @@
   margin: 0;
   margin-top: -8px;
 
-  @include vp-1159 {
+  @include vp-1023 {
     font-size: 34px;
     line-height: 51px;
     margin-top: 0;
-    padding-bottom: 3px;
+    padding-bottom: 6px;
   }
 
   @include vp-767 {
@@ -83,7 +83,7 @@
   margin: 0;
   margin-top: 7px;
 
-  @include vp-1159 {
+  @include vp-1023 {
     margin-top: 0;
   }
 
@@ -101,9 +101,10 @@
 }
 
 .booking__form {
-  margin-left: 97px;
+  margin-right: 60px;
+  justify-self: end;
 
-  @include vp-1159 {
+  @include vp-1023 {
     margin: 0 137px;
   }
 

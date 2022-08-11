@@ -1,7 +1,7 @@
 .promo {
   min-height: 548px;
 
-  @include vp-1159 {
+  @include vp-1023 {
     min-height: 464px;
   }
 }
@@ -13,7 +13,7 @@
   column-gap: 40px;
   row-gap: 30px;
 
-  @include vp-1159 {
+  @include vp-1023 {
     column-gap: 30px;
   }
 
@@ -41,7 +41,7 @@
   line-height: 42px;
   margin: -4px 0 0;
 
-  @include vp-1159 {
+  @include vp-1023 {
     font-size: 26px;
     line-height: 36.4px;
     margin-top: -9px;
@@ -58,7 +58,7 @@
   margin: 0;
   padding: 24px 0 0;
 
-  @include vp-1159 {
+  @include vp-1023 {
     padding-top: 15px;
   }
 
@@ -71,7 +71,7 @@
 .promo__picture picture {
   object-fit: cover;
 
-  @include vp-1159 {
+  @include vp-1023 {
     min-width: 324px;
     min-height: 264px;
   }

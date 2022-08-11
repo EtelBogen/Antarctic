@@ -1,7 +1,7 @@
 .contacts {
   min-height: 546px;
 
-  @include vp-1159 {
+  @include vp-1023 {
     min-height: 535px;
   }
 
@@ -17,7 +17,7 @@
   column-gap: 40px;
   row-gap: 30px;
 
-  @include vp-1159 {
+  @include vp-1023 {
     column-gap: 30px;
   }
 
@@ -38,7 +38,7 @@
   height: 306px;
   object-fit: cover;
 
-  @include vp-1159 {
+  @include vp-1023 {
     min-width: 324px;
     height: 335px;
   }
@@ -65,12 +65,12 @@
 
 .contacts__info {
   align-self: baseline;
-  padding-top: 72px;
+  padding-top: 73px;
   padding-left: 60px;
   font-size: 16px;
 
-  @include vp-1159 {
-    padding-top: 64px;
+  @include vp-1023 {
+    padding-top: 65px;
     padding-left: 0;
   }
 
@@ -90,7 +90,7 @@
   line-height: 29px;
   margin: 0;
 
-  @include vp-1159 {
+  @include vp-1023 {
     line-height: 27px;
   }
 }
@@ -101,7 +101,7 @@
   margin: 0;
   margin-bottom: 21px;
 
-  @include vp-1159 {
+  @include vp-1023 {
     margin-bottom: 22px;
   }
 }
@@ -120,8 +120,18 @@
 }
 
 .contacts__address svg {
-  @include vp-1159 {
+  @include vp-1023 {
     margin-top: 3px;
+  }
+
+  @include vp-767 {
+    margin-top: 1px;
+  }
+}
+
+.contacts__phone svg {
+  @include vp-767 {
+    margin-top: -3px;
   }
 }
 
@@ -133,7 +143,7 @@
   margin: 0;
   margin-left: 10px;
 
-  @include vp-1159 {
+  @include vp-1023 {
     margin-top: -2px;
   }
 }

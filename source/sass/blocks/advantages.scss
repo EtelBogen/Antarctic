@@ -9,7 +9,7 @@
     background-image: url("../img/jpg/advantages-background-desktop@2x.jpg");
   }
 
-  @include vp-1159 {
+  @include vp-1023 {
     min-height: 588px;
     background-image: url("../img/jpg/advantages-background-tablet@1x.jpg");
 
@@ -36,7 +36,7 @@
   margin: 0;
   padding-bottom: 49px;
 
-  @include vp-1159 {
+  @include vp-1023 {
     font-size: 26px;
     line-height: 39px;
   }
@@ -55,7 +55,7 @@
   column-gap: 40px;
   row-gap: 40px;
 
-  @include vp-1159 {
+  @include vp-1023 {
     column-gap: 30px;
     row-gap: 30px;
   }
@@ -67,6 +67,6 @@
 
 .advantages__card {
   @include vp-767 {
-    margin-bottom: 31px;
+    margin-bottom: 29px;
   }
 }

@@ -5,7 +5,7 @@
   padding-top: 11px;
   min-width: 106px;
 
-  @include vp-1159 {
+  @include vp-1023 {
     min-width: 87px;
     padding-top: 8px;
   }
@@ -33,7 +33,7 @@
   height: 20px;
   width: 11px;
 
-  @include vp-1159 {
+  @include vp-1023 {
     height: 16px;
     width: 9px;
   }
@@ -43,7 +43,7 @@
   height: 20px;
   width: 19.5px;
 
-  @include vp-1159 {
+  @include vp-1023 {
     height: 16px;
     width: 16px;
   }
@@ -53,7 +53,7 @@
   height: 16.25px;
   width: 19.5px;
 
-  @include vp-1159 {
+  @include vp-1023 {
     height: 13px;
     width: 16px;
   }
