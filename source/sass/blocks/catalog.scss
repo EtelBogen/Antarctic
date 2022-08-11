@@ -6,7 +6,7 @@
   margin: 0;
   padding-bottom: 49px;
 
-  @include vp-1159 {
+  @include vp-1023 {
     font-size: 26px;
     line-height: 39px;
   }
@@ -15,25 +15,6 @@
     font-size: 24px;
     line-height: 36px;
     padding-bottom: 31px;
-  }
-}
-
-.catalog h3 {
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 27px;
-  margin-left: 30px;
-  margin-bottom: 23px;
-  padding: 0;
-
-  @include vp-1159 {
-    margin-left: 35px;
-    margin-bottom: 28px;
-  }
-
-  @include vp-767 {
-    margin-left: 25px;
-    margin-bottom: 18px;
   }
 }
 
@@ -46,6 +27,11 @@
   padding: 0 15px;
 
   @include vp-1159 {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+  @include vp-1023 {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, 1fr);
   }

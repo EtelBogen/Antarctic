@@ -12,7 +12,7 @@
     background-image: url("../img/jpg/header-background-desktop@2x.jpg");
   }
 
-  @include vp-1159 {
+  @include vp-1023 {
     min-height: 638px;
     background-image: url("../img/jpg/header-background-tablet@1x.jpg");
     box-shadow: none;
@@ -98,7 +98,7 @@
   align-items: center;
   padding-top: 35px;
 
-  @include vp-1159 {
+  @include vp-1023 {
     padding-top: 28px;
   }
 
@@ -150,7 +150,7 @@
   padding-left: 95px;
   padding-bottom: 250px;
 
-  @include vp-1159 {
+  @include vp-1023 {
     padding-left: 0;
     padding-top: 218px;
   }
@@ -166,7 +166,7 @@
   font-size: 54px;
   line-height: 65.83px;
 
-  @include vp-1159 {
+  @include vp-1023 {
     font-size: 50px;
     line-height: 61px;
   }
@@ -183,7 +183,7 @@
   font-size: 20px;
   line-height: 24.38px;
 
-  @include vp-1159 {
+  @include vp-1023 {
     font-size: 18px;
     line-height: 22px;
     padding-top: 10px;

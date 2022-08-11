@@ -60,4 +60,4 @@ const openMainMenu = () => {
   });
 };
 
-export {openMainMenu};
+export {openMainMenu, pageBody};
