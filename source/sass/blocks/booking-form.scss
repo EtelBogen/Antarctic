@@ -94,6 +94,7 @@
   color: $color-alice-blue;
   font-size: 10px;
   line-height: 13px;
+  cursor: pointer;
 
   @include vp-767 {
     line-height: 12px;

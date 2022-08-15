@@ -829,6 +829,7 @@ button,
   color: #f9fbfd;
   font-size: 10px;
   line-height: 13px;
+  cursor: pointer;
 }
 
 .booking-form__agreement input + label {
@@ -916,6 +917,9 @@ button,
   margin-right: 60px;
   -ms-grid-column-align: end;
   justify-self: end;
+  -ms-flex-item-align: start;
+  -ms-grid-row-align: start;
+  align-self: start;
 }
 
 .button {
@@ -1242,15 +1246,12 @@ button,
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-}
-
-.navigation--footer {
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: start;
+}
+
+.navigation--footer {
   padding-left: 5px;
 }
 
@@ -1283,11 +1284,11 @@ button,
 .page-footer__wrapper {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 70px 1fr 106px;
-  grid-template-columns: 70px 1fr 106px;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  -ms-grid-columns: 70px 1fr 134px;
+  grid-template-columns: 70px 1fr 134px;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: start;
   min-height: 138px;
   padding-top: 46px;
   padding-bottom: 46px;
@@ -1299,6 +1300,11 @@ button,
 
 .page-footer__navigation {
   margin-right: 30px;
+  padding-top: 12px;
+}
+
+.page-footer__socials {
+  padding-top: 17px;
 }
 
 .page-header {
@@ -1332,6 +1338,11 @@ button,
 
 .page-header__logo-button-wrapper {
   margin-top: 3px;
+}
+
+.page-header__logo {
+  -ms-flex-item-align: start;
+  align-self: flex-start;
 }
 
 .page-header__menu-toggle {
@@ -1435,14 +1446,19 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding-top: 11px;
   min-width: 106px;
+}
+
+.socials__item {
+  margin-left: 28px;
 }
 
 .socials__item svg {
@@ -1699,14 +1715,22 @@ button,
 
   .page-footer__wrapper {
     min-height: 120px;
-    -ms-grid-columns: 38px 1fr 87px;
-    grid-template-columns: 38px 1fr 87px;
+    -ms-grid-columns: 38px 1fr 110px;
+    grid-template-columns: 38px 1fr 110px;
     padding-top: 40px;
     padding-bottom: 42px;
   }
 
   .page-footer__logo {
-    padding-top: 5px;
+    padding-top: 10px;
+  }
+
+  .page-footer__navigation {
+    padding-top: 7px;
+  }
+
+  .page-footer__socials {
+    padding-top: 11px;
   }
 
   .page-header {
@@ -1790,7 +1814,10 @@ button,
 
   .socials {
     min-width: 87px;
-    padding-top: 8px;
+  }
+
+  .socials__item {
+    margin-left: 23px;
   }
 
   .socials__item--facebook svg {
@@ -2032,9 +2059,6 @@ button,
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    -webkit-box-align: start;
-    -ms-flex-align: start;
-    align-items: start;
     padding-top: 40px;
     padding-bottom: 33px;
   }
@@ -2042,6 +2066,14 @@ button,
   .page-footer__logo {
     margin-bottom: 15px;
     padding-top: 0;
+  }
+
+  .page-footer__navigation {
+    padding-top: 0;
+  }
+
+  .page-footer__socials {
+    padding-top: 13px;
   }
 
   .page-header {
@@ -2230,7 +2262,11 @@ button,
 
   .socials {
     min-width: 87px;
-    padding-top: 13px;
+  }
+
+  .socials__item {
+    margin-left: 0;
+    margin-right: 23px;
   }
 }
 

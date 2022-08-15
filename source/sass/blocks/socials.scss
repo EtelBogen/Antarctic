@@ -1,18 +1,29 @@
 .socials {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: flex-start;
   align-items: center;
-  padding-top: 11px;
   min-width: 106px;
 
   @include vp-1023 {
     min-width: 87px;
-    padding-top: 8px;
   }
 
   @include vp-767 {
     min-width: 87px;
-    padding-top: 13px;
+  }
+}
+
+.socials__item {
+  margin-left: 28px;
+
+  @include vp-1023 {
+    margin-left: 23px;
+  }
+
+  @include vp-767 {
+    margin-left: 0;
+    margin-right: 23px;
   }
 }
 
