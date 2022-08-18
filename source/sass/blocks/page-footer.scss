@@ -4,7 +4,7 @@
 
 .page-footer__wrapper {
   display: grid;
-  grid-template-columns: 70px 1fr 134px;
+  grid-template-columns: 70px 1fr 110px;
   align-items: start;
   min-height: 138px;
   padding-top: 46px;
@@ -12,7 +12,7 @@
 
   @include vp-1023 {
     min-height: 120px;
-    grid-template-columns: 38px 1fr 110px;
+    grid-template-columns: 38px 1fr 93px;
     padding-top: 40px;
     padding-bottom: 42px;
   }

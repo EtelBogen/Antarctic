@@ -1284,8 +1284,8 @@ button,
 .page-footer__wrapper {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 70px 1fr 134px;
-  grid-template-columns: 70px 1fr 134px;
+  -ms-grid-columns: 70px 1fr 110px;
+  grid-template-columns: 70px 1fr 110px;
   -webkit-box-align: start;
   -ms-flex-align: start;
   align-items: start;
@@ -1338,11 +1338,9 @@ button,
 
 .page-header__logo-button-wrapper {
   margin-top: 3px;
-}
-
-.page-header__logo {
   -ms-flex-item-align: start;
-  align-self: flex-start;
+  -ms-grid-row-align: start;
+  align-self: start;
 }
 
 .page-header__menu-toggle {
@@ -1443,22 +1441,20 @@ button,
 }
 
 .socials {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (20px)[3];
+  grid-template-columns: repeat(3, 20px);
+  -ms-grid-rows: (1fr)[1];
+  grid-template-rows: repeat(1, 1fr);
+  -webkit-column-gap: 24px;
+  -moz-column-gap: 24px;
+  column-gap: 24px;
+  row-gap: 10px;
+  justify-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  min-width: 106px;
-}
-
-.socials__item {
-  margin-left: 28px;
 }
 
 .socials__item svg {
@@ -1715,8 +1711,8 @@ button,
 
   .page-footer__wrapper {
     min-height: 120px;
-    -ms-grid-columns: 38px 1fr 110px;
-    grid-template-columns: 38px 1fr 110px;
+    -ms-grid-columns: 38px 1fr 93px;
+    grid-template-columns: 38px 1fr 93px;
     padding-top: 40px;
     padding-bottom: 42px;
   }
@@ -1813,11 +1809,10 @@ button,
   }
 
   .socials {
-    min-width: 87px;
-  }
-
-  .socials__item {
-    margin-left: 23px;
+    min-width: 93px;
+    -webkit-column-gap: 17px;
+    -moz-column-gap: 17px;
+    column-gap: 17px;
   }
 
   .socials__item--facebook svg {
@@ -2262,11 +2257,18 @@ button,
 
   .socials {
     min-width: 87px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-column-gap: 13px;
+    -moz-column-gap: 13px;
+    column-gap: 13px;
   }
 
   .socials__item {
-    margin-left: 0;
-    margin-right: 23px;
+    width: 20px;
   }
 }
 

@@ -110,6 +110,7 @@
 
 .page-header__logo-button-wrapper {
   margin-top: 3px;
+  align-self: start;
 
   @include vp-1023 {
     margin-top: 5px;
@@ -122,10 +123,6 @@
     width: 100%;
     margin-top: 0;
   }
-}
-
-.page-header__logo {
-  align-self: flex-start;
 }
 
 .page-header__logo svg {

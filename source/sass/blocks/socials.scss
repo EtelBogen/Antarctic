@@ -1,29 +1,28 @@
 .socials {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
+  display: grid;
+  grid-template-columns: repeat(3, 20px);
+  grid-template-rows: repeat(1, 1fr);
+  column-gap: 24px;
+  row-gap: 10px;
+  justify-items: center;
   align-items: center;
-  min-width: 106px;
 
   @include vp-1023 {
-    min-width: 87px;
+    min-width: 93px;
+    column-gap: 17px;
   }
 
   @include vp-767 {
     min-width: 87px;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 13px;
   }
 }
 
 .socials__item {
-  margin-left: 28px;
-
-  @include vp-1023 {
-    margin-left: 23px;
-  }
-
   @include vp-767 {
-    margin-left: 0;
-    margin-right: 23px;
+    width: 20px;
   }
 }
 
