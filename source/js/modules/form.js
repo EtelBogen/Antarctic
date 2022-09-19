@@ -1,5 +1,5 @@
 const saveFormInStorage = () => {
-  const saveForm = (form) => { // запись в Local Starage
+  const saveForm = (form) => { // запись в Local Storage
     const formName = form.id;
     const formData = new FormData(form);
     const object = {};
